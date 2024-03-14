@@ -1,16 +1,16 @@
-import { ThemeProvider } from '@/components/ThemeProvider';
-import './globals.css';
-import { Analytics } from '@vercel/analytics/react';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import Nav from '@/components/NavigationMenu/Nav';
+import { ThemeProvider } from "@/components/ThemeProvider";
+import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import Nav from "@/components/NavigationMenu/Nav";
 // import Footer from '@/components/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Dyondzisani Commerce Official Website',
-  description: 'Dyondzisani Commerce Official Website',
+  title: "Dyondzisani Commerce Official Website",
+  description: "Dyondzisani Commerce Official Website",
 };
 
 export default function RootLayout({
@@ -19,11 +19,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider
-          attribute='class'
-          defaultTheme='system'
+          attribute="class"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
