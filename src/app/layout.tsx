@@ -9,8 +9,8 @@ import Nav from '@/components/NavigationMenu/Nav';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Chichikgadi Official Website',
-  description: 'Chichikgadi Official Website',
+  title: 'Dyondzisani Commerce Official Website',
+  description: 'Dyondzisani Commerce Official Website',
 };
 
 export default function RootLayout({
