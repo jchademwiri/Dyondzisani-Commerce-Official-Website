@@ -7,7 +7,7 @@ import { logo } from "@/data/images";
 
 const Nav = () => {
   return (
-    <nav className="mx-auto flex w-[80%] max-w-6xl items-center justify-between py-4">
+    <nav className="container mx-auto flex items-center justify-between py-4">
       <Link href="/" className="font-semibold">
         <Image src={logo} alt="dyondzisani commerce logo" width={40} />
       </Link>
