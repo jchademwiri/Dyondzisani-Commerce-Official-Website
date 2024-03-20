@@ -3,7 +3,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-// import Nav from "@/components/NavigationMenu/Nav";
+import Nav from "@/components/NavigationMenu/Nav";
 // import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,7 +19,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className="scroll-smooth focus:scroll-auto"
+    >
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -27,7 +31,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/* <Nav /> */}
+          <Nav />
           {children}
           {/* <Footer /> */}
           <Analytics />

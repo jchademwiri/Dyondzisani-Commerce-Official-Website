@@ -1,13 +1,11 @@
-import ComingSoon from "@/components/ComingSoon";
-// import { LampHero } from "@/components/LampHero";
-// import { TestimonialCards } from "@/components/Testimonials";
+import HomeHero from "@/components/HomeHero";
+import { Services } from "@/components/Sections";
 
 const Home = () => {
   return (
     <main>
-      <ComingSoon />
-      {/* <LampHero /> */}
-      {/* <TestimonialCards /> */}
+      <HomeHero />
+      <Services />
     </main>
   );
 };
