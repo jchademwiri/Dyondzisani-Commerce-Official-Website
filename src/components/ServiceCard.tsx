@@ -1,27 +1,35 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { accounting } from "@/data/images";
 import Link from "next/link";
 
-const ServiceCard = () => {
+type ServiceCardProps = {
+  image: StaticImageData;
+  alt: string;
+  title: string;
+  link: string;
+  description: string;
+};
+
+const ServiceCard = ({
+  image,
+  alt,
+  title,
+  link,
+  description,
+}: ServiceCardProps) => {
   return (
     <Card className="">
       <Image
-        src={accounting}
-        alt="Accounting-lessons"
+        src={image}
+        alt={alt}
         className="w-full rounded-t-lg bg-cover object-cover"
       />
       <CardHeader>
         <CardTitle className="hover:text-primary">
-          <Link href={"/"}>Accounting</Link>
+          <Link href={link}>{title}</Link>
         </CardTitle>
       </CardHeader>
-      <CardContent>
-        Accounting is the process of recording financial transactions and
-        information that take place in a business. Learners will be exposed to
-        an in depth understanding of financial and managerial accounting, the
-        importance corporate governance, Ethics and Auditing.{" "}
-      </CardContent>
+      <CardContent>{description}</CardContent>
     </Card>
   );
 };

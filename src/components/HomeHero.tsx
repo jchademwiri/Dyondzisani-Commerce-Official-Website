@@ -8,13 +8,13 @@ import { Bolt, MessagesSquare } from "lucide-react";
 
 const HomeHero = () => {
   return (
-    <div className="relative flex h-[100vh] w-full flex-col items-center justify-center rounded-md bg-neutral-950 antialiased">
+    <div className="container relative mx-auto flex min-h-[100vh] flex-col items-center justify-center rounded-md bg-neutral-950 antialiased">
       <div>
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.3,
+            delay: 0.2,
             duration: 0.8,
             ease: "easeInOut",
           }}
