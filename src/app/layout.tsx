@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import Nav from "@/components/NavigationMenu/Nav";
 import Footer from "@/components/Footer";
 import NewFooter from "@/components/Footer/footer";
+import { BackgroundBeams } from "@/components/ui/background-beams";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,6 +38,7 @@ export default function RootLayout({
           {/* <Footer /> */}
           <NewFooter />
           <Analytics />
+          <BackgroundBeams />
         </ThemeProvider>
       </body>
     </html>

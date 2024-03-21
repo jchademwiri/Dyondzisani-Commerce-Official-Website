@@ -8,7 +8,7 @@ import { Bolt, MessagesSquare } from "lucide-react";
 
 const HomeHero = () => {
   return (
-    <div className="container relative mx-auto flex min-h-[100vh] flex-col items-center justify-center rounded-md bg-neutral-950 antialiased">
+    <div className="container relative mx-auto flex min-h-[90vh] flex-col items-center justify-center rounded-md antialiased">
       <div>
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
@@ -20,12 +20,12 @@ const HomeHero = () => {
           }}
           className="relative z-20 flex flex-col items-center justify-center gap-4 px-4"
         >
-          <div className="text-center text-3xl font-bold text-foreground md:text-7xl">
-            Dyondzisani <span className="text-accent">Commerce</span>
+          <div className="text-center text-3xl font-bold tracking-tight text-foreground md:text-7xl">
+            Dyondzisani <span className="text-primary">Commerce</span>
           </div>
-          <div className="py-4 text-base font-extralight text-foreground md:text-4xl">
-            We have a heart for teaching
-          </div>
+          <p className="py-4 text-base font-extralight text-foreground md:text-4xl">
+            We have a heart for teaching <br /> We have a heart for teaching
+          </p>
           <motion.div
             initial={{ opacity: 0.0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -37,17 +37,13 @@ const HomeHero = () => {
             className="flex gap-4"
           >
             <Link href={"/"} className="hover:bg-destructive">
-              <Button size={"lg"} className="flex gap-2">
+              <Button className="flex gap-2">
                 <MessagesSquare />
                 Let&apos;s Chat Now
               </Button>
             </Link>
             <Link href={"#services"}>
-              <Button
-                size={"lg"}
-                variant={"destructive"}
-                className="flex gap-2"
-              >
+              <Button variant={"destructive"} className="flex gap-2">
                 <Bolt />
                 Our Services
               </Button>
@@ -55,7 +51,7 @@ const HomeHero = () => {
           </motion.div>
         </motion.div>
       </div>
-      <BackgroundBeams />
+      {/* <BackgroundBeams /> */}
     </div>
   );
 };
