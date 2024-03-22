@@ -7,6 +7,7 @@ import Nav from "@/components/NavigationMenu/Nav";
 // import Footer from "@/components/Footer";
 import NewFooter from "@/components/Footer/footer";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,6 +40,7 @@ export default function RootLayout({
           <NewFooter />
           <Analytics />
           <BackgroundBeams />
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
