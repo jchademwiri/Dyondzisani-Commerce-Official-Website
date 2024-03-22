@@ -56,7 +56,6 @@ const Contact = () => {
           </CardDescription>
         </CardContent>
       </Card>
-      {/* </section> */}
     </main>
   );
 };
