@@ -30,8 +30,8 @@ const NewFooter = () => {
           <a className="text-muted-foreground">
             <svg
               fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeWidth="2"
               className="h-5 w-5"
               viewBox="0 0 24 24"
@@ -42,8 +42,8 @@ const NewFooter = () => {
           <a className="ml-3 text-muted-foreground">
             <svg
               fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeWidth="2"
               className="h-5 w-5"
               viewBox="0 0 24 24"
@@ -55,8 +55,8 @@ const NewFooter = () => {
             <svg
               fill="none"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeWidth="2"
               className="h-5 w-5"
               viewBox="0 0 24 24"
@@ -69,8 +69,8 @@ const NewFooter = () => {
             <svg
               fill="currentColor"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeWidth="0"
               className="h-5 w-5"
               viewBox="0 0 24 24"
