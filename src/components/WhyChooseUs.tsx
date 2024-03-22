@@ -1,11 +1,24 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Boxes } from "./ui/background-boxes";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { MessagesSquare } from "lucide-react";
 
 const WhyChooseUs = () => {
   return (
-    <div className="relative my-5 flex h-96 w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
+    <motion.div
+      initial={{ opacity: 0.0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        delay: 0.2,
+        duration: 0.8,
+        ease: "easeInOut",
+      }}
+      className="relative my-5 flex h-96 w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background"
+    >
       <div className="pointer-events-none absolute inset-0 z-20 h-full w-full bg-background [mask-image:radial-gradient(transparent,white)]" />
 
       <Boxes />
@@ -19,15 +32,17 @@ const WhyChooseUs = () => {
         economics, business and accounting gives your child a distinct tool to
         start exercising daily commerce decisions at their level.
       </p>
-      <div className="relative z-20 space-x-4 py-6">
-        <Link href={"/about"}>
-          <Button>Learn More</Button>
-        </Link>
+      <div className="relative z-20 flex gap-4 py-6">
         <Link href={"/"}>
-          <Button>Talk To Us</Button>
+          <Button variant={"destructive"} className="flex gap-2">
+            <MessagesSquare /> Talk To Us
+          </Button>
+        </Link>
+        <Link href={"/about"}>
+          <Button className="flex gap-2">Learn More</Button>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default WhyChooseUs;
