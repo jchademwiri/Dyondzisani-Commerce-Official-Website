@@ -5,14 +5,6 @@ export const links: { title: string; href: string }[] = [
     href: "/",
   },
   {
-    title: "Services",
-    href: "/services",
-  },
-  {
-    title: "Projects",
-    href: "/projects",
-  },
-  {
     title: "About",
     href: "/about",
   },
