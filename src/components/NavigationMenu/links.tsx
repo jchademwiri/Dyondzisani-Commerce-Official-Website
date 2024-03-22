@@ -12,4 +12,8 @@ export const links: { title: string; href: string }[] = [
     title: "Contact",
     href: "/contact",
   },
+  {
+    title: "Call Us Now",
+    href: "/contact",
+  },
 ];
