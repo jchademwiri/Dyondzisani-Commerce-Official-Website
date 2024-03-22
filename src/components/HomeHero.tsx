@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { BackgroundBeams } from "./ui/background-beams";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { Bolt, MessagesSquare } from "lucide-react";
