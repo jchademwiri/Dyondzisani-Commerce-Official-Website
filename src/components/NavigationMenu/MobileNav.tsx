@@ -37,10 +37,13 @@ export function MobileMenu() {
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem className="my-4">
-              {links.map((link) => (
+              {links.map((link, index) => (
                 <div key={link.href}>
                   <Link href={link.href} legacyBehavior passHref>
-                    <NavigationMenuLink className="grid gap-2 rounded-sm p-2 hover:bg-accent">
+                    <NavigationMenuLink
+                      className={`my-1 grid gap-2 rounded-sm p-2 hover:bg-accent
+                      ${index === links.length - 1 ? "bg-primary" : ""}`}
+                    >
                       {link.title}
                     </NavigationMenuLink>
                   </Link>
@@ -49,7 +52,7 @@ export function MobileMenu() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        <SheetFooter className="flex-row sm:justify-start gap-2">
+        <SheetFooter className="flex-row gap-2 sm:justify-start">
           <Button size={"icon"} variant={"outline"}>
             <Link href="/" className="p-2">
               <Facebook />

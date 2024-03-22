@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
         duration: 0.8,
         ease: "easeInOut",
       }}
-      className="relative my-5 flex h-96 w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background"
+      className="container relative my-5 flex h-96 w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background"
     >
       <div className="pointer-events-none absolute inset-0 z-20 h-full w-full bg-background [mask-image:radial-gradient(transparent,white)]" />
 
