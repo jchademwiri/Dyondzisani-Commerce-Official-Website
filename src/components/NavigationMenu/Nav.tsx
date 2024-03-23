@@ -12,7 +12,7 @@ const Nav = () => {
         <Image
           src={logo}
           alt="dyondzisani commerce logo"
-          height={35}
+          height={30}
           className="w-auto"
         />
       </Link>

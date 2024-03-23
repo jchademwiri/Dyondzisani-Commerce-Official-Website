@@ -30,10 +30,9 @@ export function MobileMenu() {
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
-          <SheetTitle>Navigation Menu</SheetTitle>
-          <SheetDescription>We are at your service.</SheetDescription>
+          <SheetTitle>Dyondzisani Commerce</SheetTitle>
+          <SheetDescription>We have a heart for teaching.</SheetDescription>
         </SheetHeader>
-
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem className="my-4">
