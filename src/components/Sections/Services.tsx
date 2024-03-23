@@ -10,7 +10,7 @@ const Services = () => {
   return (
     <section id="services" className="container max-w-6xl py-5 ">
       <motion.header
-        initial={{ opacity: 0.0, y: 40 }}
+        initial={{ opacity: 0.5, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.2,
@@ -20,7 +20,7 @@ const Services = () => {
         className="mx-auto my-4 grid place-items-center text-center lg:w-2/3"
       >
         <motion.h2
-          initial={{ opacity: 0.0, y: 40 }}
+          initial={{ opacity: 0.5, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             delay: 0.2,
@@ -39,7 +39,7 @@ const Services = () => {
         </p>
       </motion.header>
       <motion.section
-        initial={{ opacity: 0.0, y: 40 }}
+        initial={{ opacity: 0.5, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.3,

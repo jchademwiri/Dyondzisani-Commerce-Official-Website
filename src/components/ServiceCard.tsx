@@ -45,7 +45,7 @@ const ServiceCard = ({
       </div>
       <CardFooter>
         <Link href={link} className={`${color}`}>
-          <Button variant={"link"}>Read More</Button>
+          Read More
         </Link>
       </CardFooter>
     </Card>

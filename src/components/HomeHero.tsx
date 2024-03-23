@@ -10,7 +10,7 @@ const HomeHero = () => {
     <div className="container relative mx-auto flex min-h-[90vh] flex-col items-center justify-center rounded-md antialiased">
       <div>
         <motion.div
-          initial={{ opacity: 0.0, y: 40 }}
+          initial={{ opacity: 0.5, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             delay: 0.1,
@@ -26,7 +26,7 @@ const HomeHero = () => {
             We have a heart for teaching <br /> We have a heart for teaching
           </p>
           <motion.div
-            initial={{ opacity: 0.0, y: 40 }}
+            initial={{ opacity: 0.0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
               delay: 0.2,
