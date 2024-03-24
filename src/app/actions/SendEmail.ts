@@ -21,7 +21,7 @@ export const SendEmail = async ({
       to: ["info@dyondzisanicommerce.co.za"],
       cc: { email },
       replyTo: ["info@dyondzisanicommerce.co.za"],
-      subject: "Local Dev Test: New Student Enrolment",
+      subject: "Dev Server Test: New Student Enrolment",
       react: DyondzisaniCommerceTemplate({
         firstName,
         lastName,
