@@ -55,6 +55,7 @@ const ContactForm = () => {
     });
     console.log(data);
     await SendEmail(data);
+    form.reset();
   }
   return (
     <>
