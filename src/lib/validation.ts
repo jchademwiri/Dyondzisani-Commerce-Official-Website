@@ -13,7 +13,7 @@ const formSchema = z.object({
   phone: z.string().min(10, {
     message: "Phone number must be at least 10 characters.",
   }),
-  medicalStatus: z
+  medicalCondition: z
     .string()
     .min(2, {
       message: "Medical Status must be at least 2 characters.",

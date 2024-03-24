@@ -31,7 +31,7 @@ const ContactForm = () => {
       lastName: "",
       email: "",
       phone: "",
-      medicalStatus: "",
+      medicalCondition: "",
       learnerFullName: "",
       learnerGrade: undefined,
       curriculum: undefined,
@@ -120,22 +120,6 @@ const ContactForm = () => {
                   )}
                 />
               </div>
-              <FormField
-                control={form.control}
-                name="medicalStatus"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Medical Status</FormLabel>
-                    <FormControl>
-                      <Textarea placeholder="e.g anxiety." {...field} />
-                    </FormControl>
-                    <FormDescription>
-                      Describe any medical condition / disability
-                    </FormDescription>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
             </div>
             {/* Learner Details */}
             <div>
@@ -271,6 +255,23 @@ const ContactForm = () => {
                           {/* <LearnerGrade /> */}
                         </RadioGroup>
                       </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="medicalCondition"
+                  render={({ field }) => (
+                    <FormItem className="col-span-2">
+                      <FormLabel>Medical Condition</FormLabel>
+                      <FormControl>
+                        <Textarea placeholder="e.g anxiety." {...field} />
+                      </FormControl>
+                      <FormDescription>
+                        Describe any learner&apos;s medical condition /
+                        disability.
+                      </FormDescription>
                       <FormMessage />
                     </FormItem>
                   )}
