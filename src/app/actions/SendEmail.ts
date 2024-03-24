@@ -1,7 +1,6 @@
 "use server";
 import { DyondzisaniCommerceTemplate } from "@/components/EmailTemplates";
 import { TFormSchema } from "@/lib/validation";
-import { NextResponse } from "next/server";
 import { Resend } from "resend";
 export const SendEmail = async ({
   firstName,
@@ -17,11 +16,11 @@ export const SendEmail = async ({
   try {
     const resend: any = new Resend(process.env.RESEND_API_KEY);
     const emailBody = await resend.emails.send({
-      from: "Dyodzisani Commerce Website <enquiries@dyondzisanicommerce.co.za>",
-      to: ["info@dyondzisanicommerce.co.za"],
-      cc: { email },
-      replyTo: ["info@dyondzisanicommerce.co.za"],
-      subject: "Dev Server Test: New Student Enrolment",
+      from: `Dyodzisani Commerce Website <enquiries@dyondzisanicommerce.co.za>`,
+      to: `info@dyondzisanicommerce.co.za`,
+      cc: `${email}`,
+      replyTo: `info@dyondzisanicommerce.co.za`,
+      subject: `Dev Server Test: New Student Enrolment`,
       react: DyondzisaniCommerceTemplate({
         firstName,
         lastName,
@@ -34,7 +33,7 @@ export const SendEmail = async ({
         medicalCondition,
       }),
     });
-    return console.log("Server Action:", emailBody);
+    return console.log(`Email Sent`);
   } catch (error) {
     return console.log(error);
   }
