@@ -13,7 +13,9 @@ const NewFooter = () => {
             height={35}
             className="w-auto"
           />
-          <span className="ml-3 text-xl text-primary">Dyondisani Commerce</span>
+          <span className="ml-3 text-xl text-primary">
+            Dyondzisani Commerce
+          </span>
         </a>
         <p className="mt-4 text-sm text-muted-foreground sm:ml-6 sm:mt-0">
           &copy; {new Date().getFullYear()} Copyright Reserved —
