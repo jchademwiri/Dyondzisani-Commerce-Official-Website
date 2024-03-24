@@ -2,7 +2,6 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-
 import { Button } from "../ui/button";
 import {
   Form,
@@ -21,6 +20,7 @@ import { Checkbox } from "../ui/checkbox";
 import { toast } from "../ui/use-toast";
 import { grades, subjects } from "@/data/formdata";
 import formSchema, { TFormSchema } from "@/lib/validation";
+import { SendEmail } from "@/app/actions";
 
 const ContactForm = () => {
   // 1. Define your form.
@@ -39,19 +39,22 @@ const ContactForm = () => {
     },
   });
   // 2. Define a submit handler.
-  function onSubmit(data: TFormSchema) {
+  // function onSubmit(data: TFormSchema) {
+  async function onSubmit(data: TFormSchema) {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
-
     toast({
-      title: "You submitted the following values:",
+      title: `Thank You ${data.firstName}`,
       description: (
         <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
+          <code className="text-white">
+            Your email for {data.learnerFullName} has been sent.
+          </code>
         </pre>
       ),
     });
     console.log(data);
+    await SendEmail(data);
   }
   return (
     <>

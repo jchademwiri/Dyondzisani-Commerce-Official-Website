@@ -7,7 +7,6 @@ import {
   Hr,
   Html,
   Img,
-  Link,
   Preview,
   Section,
   Text,
@@ -28,20 +27,16 @@ interface DyondzisaniCommerceTemplateProps {
   medicalCondition: string;
 }
 
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "http://localhost:3000";
-
 export const DyondzisaniCommerceTemplate = ({
-  firstName = "Rose",
-  lastName = "Dlamini",
-  email = "rosedlamini@gmail.com",
-  phone = "0123456789",
-  learnerFullName = "Mike Dlamini",
-  learnerGrade = "Grade 10",
-  curriculum = "CAPS",
-  subjects = ["Accounts", "Economics"],
-  medicalCondition = "None",
+  firstName,
+  lastName,
+  email,
+  phone,
+  learnerFullName,
+  learnerGrade,
+  curriculum,
+  subjects,
+  medicalCondition,
 }: DyondzisaniCommerceTemplateProps) => (
   <Html>
     <Head />
@@ -62,10 +57,10 @@ export const DyondzisaniCommerceTemplate = ({
                 Parent / Guardian Details
               </Heading>
               <Text>
-                Full Name: {(firstName = "Rose")} {(lastName = "Dlamini")}
+                Full Name: {firstName} {lastName}
               </Text>
-              <Text>Email Address: {(email = "rose@gmail.com")}</Text>
-              <Text>Phone Number: {(phone = "0123456789")}</Text>
+              <Text>Email Address: {email}</Text>
+              <Text>Phone Number: {phone}</Text>
             </Section>
             <Hr className="border-[#EFAD2B]" />
             <Section>
@@ -76,7 +71,7 @@ export const DyondzisaniCommerceTemplate = ({
               <Text>Grade: {learnerGrade}</Text>
               <Text>Curriculum: {curriculum}</Text>
               <Text>Subjects: {subjects.join(", ")}</Text>
-              <Text>Medical Condition: {(medicalCondition = "None")}</Text>
+              <Text>Medical Condition: {medicalCondition}</Text>
             </Section>
             <Hr className="border-[#EFAD2B]" />
             <Section>
