@@ -22,8 +22,8 @@ const HomeHero = () => {
           <div className="text-center text-3xl font-bold tracking-tight text-foreground md:text-7xl">
             Dyondzisani <span className="text-primary">Commerce</span>
           </div>
-          <p className="py-4 text-base font-extralight text-foreground md:text-4xl">
-            We have a heart for teaching <br /> We have a heart for teaching
+          <p className="py-4 text-center text-base font-extralight text-foreground md:text-4xl">
+            Bcom Experts <br /> Yet Teachers at heart.
           </p>
           <motion.div
             initial={{ opacity: 0.0, y: 20 }}

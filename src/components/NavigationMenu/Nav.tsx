@@ -12,8 +12,7 @@ const Nav = () => {
         <Image
           src={logo}
           alt="dyondzisani commerce logo"
-          height={30}
-          className="w-auto"
+          className="h-[30px] w-auto"
         />
       </Link>
       <div className="flex items-center gap-1">

@@ -22,6 +22,7 @@ const WhyChooseUs = () => {
       <div className="pointer-events-none absolute inset-0 z-20 h-full w-full bg-background [mask-image:radial-gradient(transparent,white)]" />
 
       <Boxes />
+
       <h2
         className={cn(
           "relative z-20 px-8 text-xl font-semibold md:px-0  md:text-4xl",
@@ -29,7 +30,7 @@ const WhyChooseUs = () => {
       >
         Why Choose Us?
       </h2>
-      <p className="relative z-20 mt-2 max-w-[1000px] px-8 text-center leading-7  text-foreground/90 md:px-0">
+      <p className="container relative z-20 mt-2 max-w-[1000px] px-8 text-center leading-7  text-foreground/90 md:px-0">
         We firmly believe that commerce is what truly makes the world go round.
         Irrespective which career or entrepreneurial path your child chooses to
         follow, their path will land them in commerce. An early introduction of

@@ -10,8 +10,7 @@ const NewFooter = () => {
           <Image
             src={logo}
             alt="dyondzisani commerce logo"
-            height={35}
-            className="w-auto"
+            className="h-[30px] w-auto"
           />
           <span className="ml-3 text-xl text-primary">
             Dyondzisani Commerce
