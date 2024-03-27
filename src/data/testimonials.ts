@@ -1,31 +1,38 @@
 export const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "Mellisa's tutoring made a huge difference in my understanding of accounting! She explained even the trickiest concepts in a way that was easy for me (grade 10) to grasp. Thanks to her, I went from struggling to getting A's on my tests!",
+    name: "Jessica Williams",
+    title: "Grade 10 Student  ",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
-  },
-  {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+      "Mellisa's passion for business studies is contagious! Her tutoring helped me not only understand the material for my grade 9 class but also see how it applies to the real world. I feel much more confident about my future business goals now.",
+    name: "Christopher Evans",
+    title: "Grade 9 Student  ",
   },
   {
     quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+      "In grade 8, economics seemed super confusing. But with Mellisa's clear explanations and engaging activities, it all clicked! Now I actually find economics interesting – thanks, Mellisa!",
+    name: "Olivia Rodriguez",
+    title: "Grade 8 Student  ",
   },
   {
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+      "With Mellisa's help, I aced my high school accounting finals! Her personalized approach and focus on exam preparation were exactly what I needed for success. Thanks, Mellisa!",
+    name: "Matthew Taylor",
+    title: "Grade 12 Student  ",
+  },
+  {
+    quote:
+      "As a grade 11 student, I was struggling with business management concepts. Mellisa's tutoring sessions were a lifesaver!  Her clear explanations and helpful study tips made a world of difference.",
+    name: "Katherine Clark",
+    title: "Grade 11 Student ",
+  },
+  {
+    quote:
+      "Mellisa's passion for economics is inspiring! Her tutoring helped me not only understand complex theories for my grade 12 class but also develop critical thinking skills that will be valuable in college.",
+    name: "Daniel Garcia",
+    title: "Grade 12 Student",
   },
 ];

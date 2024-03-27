@@ -7,24 +7,26 @@ import { logo } from "@/data/images";
 
 const Nav = () => {
   return (
-    <nav className="container flex items-center justify-between py-4">
-      <Link href="/" className="font-semibold">
-        <Image
-          src={logo}
-          alt="dyondzisani commerce logo"
-          className="h-[30px] w-auto"
-        />
-      </Link>
-      <div className="flex items-center gap-1">
-        <div className="hidden md:block">
-          <Menu />
+    <div className="">
+      <nav className="container flex items-center justify-between  py-4">
+        <Link href="/" className="font-semibold">
+          <Image
+            src={logo}
+            alt="dyondzisani commerce logo"
+            className="h-[30px] w-auto"
+          />
+        </Link>
+        <div className="flex items-center gap-1">
+          <div className="hidden md:block">
+            <Menu />
+          </div>
+          <div className="md:hidden">
+            <MobileMenu />
+          </div>
+          <ModeToggle />
         </div>
-        <div className="md:hidden">
-          <MobileMenu />
-        </div>
-        <ModeToggle />
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
 export default Nav;

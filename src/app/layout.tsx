@@ -25,7 +25,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className="scroll-smooth focus:scroll-auto"
+      className="scroll-smooth  focus:scroll-auto"
     >
       <body className={inter.className}>
         <ThemeProvider
@@ -39,7 +39,7 @@ export default function RootLayout({
           {/* <Footer /> */}
           <NewFooter />
           <Analytics />
-          <BackgroundBeams />
+          {/* <BackgroundBeams /> */}
           <Toaster />
         </ThemeProvider>
       </body>
