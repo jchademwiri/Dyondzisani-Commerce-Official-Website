@@ -1,3 +1,5 @@
+import { TestimonialSlide } from "@/components/TestimonialSlide";
+
 const About = () => {
   return (
     <main className="container my-8 grid gap-4 lg:grid-cols-3 ">
@@ -39,7 +41,7 @@ const About = () => {
           level.
         </p>
       </section>
-      <section className="col-span-2 grid gap-3 md:grid-cols-2 lg:col-auto lg:grid-cols-1">
+      <section className="col-span-2 grid  gap-3 md:grid-cols-2 lg:col-auto lg:grid-cols-1">
         <div>
           <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
             Our Mission
@@ -52,15 +54,10 @@ const About = () => {
           </p>
         </div>
         <div>
-          <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-            Our Mission
-          </h2>
-          <p className="text-xl text-muted-foreground">
-            Dyondzisani Commerce strive for academic excellence in commercial
-            subjects for Grade 8-12 IEB and CAPS. This will be achieved through
-            providing classes and tutoring sessions to learners who wish to
-            obtain academic excellence.
-          </p>
+          <h3 className=" scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0 ">
+            What Our Students Say
+          </h3>
+          <TestimonialSlide />
         </div>
       </section>
     </main>
