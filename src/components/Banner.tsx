@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 
 const Banner = () => {
   return (
-    <section className="position: relative flex h-[600px] flex-col justify-center gap-5 bg-background bg-[url('/images/hero-bg.jpg')] bg-cover bg-fixed bg-center py-20 ">
+    <section className="position: relative flex h-[500px] flex-col justify-center gap-5 bg-background bg-[url('/images/hero-bg.jpg')] bg-cover bg-fixed bg-center py-20 ">
       {/* bg-background bg-[url('/images/hero-bg.jpg') */}
       <div className="z-index: 1 absolute bottom-0 left-0 right-0 top-0 bg-background opacity-80"></div>
       <div className=" position: z-index: 2 relative m-auto w-[90%] max-w-7xl text-center">
