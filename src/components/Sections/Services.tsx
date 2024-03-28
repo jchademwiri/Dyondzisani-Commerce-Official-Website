@@ -8,7 +8,7 @@ import Link from "next/link";
 const Services = () => {
   return (
     <section id="services" className="container max-w-6xl py-5 ">
-      <header className="mx-auto my-4 grid place-items-center text-center lg:w-2/3">
+      <header className="my-4 grid place-items-center text-center">
         <h2 className="scroll-m-20 border-b  pb-2 text-5xl font-semibold tracking-tight first:mt-0">
           Our Services
         </h2>
