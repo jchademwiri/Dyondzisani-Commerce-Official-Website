@@ -4,50 +4,22 @@ import ServiceCard from "../ServiceCard";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { accounting, business, economics } from "@/data/images";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 const Services = () => {
   return (
     <section id="services" className="container max-w-6xl py-5 ">
-      <motion.header
-        initial={{ opacity: 0.5, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.2,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="mx-auto my-4 grid place-items-center text-center lg:w-2/3"
-      >
-        <motion.h2
-          initial={{ opacity: 0.5, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.2,
-            duration: 0.8,
-            ease: "easeInOut",
-          }}
-          className="scroll-m-20 border-b  pb-2 text-5xl font-semibold tracking-tight first:mt-0"
-        >
+      <header className="mx-auto my-4 grid place-items-center text-center lg:w-2/3">
+        <h2 className="scroll-m-20 border-b  pb-2 text-5xl font-semibold tracking-tight first:mt-0">
           Our Services
-        </motion.h2>
+        </h2>
         <p className="text-lg leading-7 [&:not(:first-child)]:mt-6">
           Dyondzisani Commerce strive for academic excellence in commercial
           subjects for Grade 8-12 IEB and CAPS. This will be achieved through
           providing classes and tutoring sessions to learners who wish to obtain
           academic excellence.
         </p>
-      </motion.header>
-      <motion.section
-        initial={{ opacity: 0.5, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="my-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
-      >
+      </header>
+      <section className="my-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <ServiceCard
           color="text-destructive"
           image={accounting}
@@ -93,7 +65,7 @@ const Services = () => {
             the importance corporate governance, Ethics and Auditing.{" "}
           </CardContent>
         </Card>
-      </motion.section>
+      </section>
     </section>
   );
 };
