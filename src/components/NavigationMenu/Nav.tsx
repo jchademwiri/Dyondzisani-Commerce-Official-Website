@@ -7,8 +7,8 @@ import { logo } from "@/data/images";
 
 const Nav = () => {
   return (
-    <div className="">
-      <nav className="container flex items-center justify-between  py-4">
+    <nav className="sticky top-0 border-b bg-background shadow-sm">
+      <div className="container flex items-center justify-between  py-4">
         <Link href="/" className="font-semibold">
           <Image
             src={logo}
@@ -25,8 +25,8 @@ const Nav = () => {
           </div>
           <ModeToggle />
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 export default Nav;
