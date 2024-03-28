@@ -61,3 +61,6 @@ body {
   --new-primary: hsl(18, 80%, 52%);
   --my-secondary: hsl(359, 83%, 72%);
 }
+.flip {
+  transform: scaleX(-1);
+}

@@ -13,7 +13,7 @@ export const links: { title: string; href: string }[] = [
     href: "/contact",
   },
   {
-    title: "Contact Us Now",
+    title: "CONTACT US NOW",
     href: "/contact",
   },
 ];

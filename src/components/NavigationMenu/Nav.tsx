@@ -7,7 +7,7 @@ import { logo } from "@/data/images";
 
 const Nav = () => {
   return (
-    <nav className="sticky top-0 border-b bg-background shadow-sm">
+    <nav className="sticky top-0 z-50 border-b bg-background shadow-sm">
       <div className="container flex items-center justify-between  py-4">
         <Link href="/" className="font-semibold">
           <Image

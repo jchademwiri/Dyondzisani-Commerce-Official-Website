@@ -1,6 +1,7 @@
 import Banner from "@/components/Banner";
 import ContactDetailsCard from "@/components/ContactDetailsCard";
 import ContactForm from "@/components/Forms/ContactForm";
+import ContactHero from "@/components/Hero/ContactHero";
 import {
   Card,
   CardContent,
@@ -12,7 +13,7 @@ import {
 const Contact = () => {
   return (
     <>
-      <Banner />
+      <ContactHero />
       <main className="container my-4 grid gap-4 md:grid-cols-2">
         <Card className=" overflow-hidden bg-background/70">
           <CardHeader>

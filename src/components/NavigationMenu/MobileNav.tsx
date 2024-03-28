@@ -41,7 +41,7 @@ export function MobileMenu() {
                   <Link href={link.href} legacyBehavior passHref>
                     <NavigationMenuLink
                       className={`my-1 grid gap-2 rounded-sm p-2 hover:bg-accent
-                      ${index === links.length - 1 ? "bg-primary" : ""}`}
+                      ${index === links.length - 1 ? "bg-primary uppercase" : ""}`}
                     >
                       {link.title}
                     </NavigationMenuLink>

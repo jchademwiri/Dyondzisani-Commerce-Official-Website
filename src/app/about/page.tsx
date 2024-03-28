@@ -1,13 +1,13 @@
-import Banner from "@/components/Banner";
+import { AboutHero } from "@/components/Hero";
 import { TestimonialSlide } from "@/components/TestimonialSlide";
 
 const About = () => {
   return (
     <>
-      <Banner />
+      <AboutHero />
       <main className="container my-8 gap-4 lg:grid lg:grid-cols-3 ">
-        <section className="col-span-2">
-          {/* <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+        <section className="col-span-2" id="whychooseus">
+          {/* <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
             Who is Dyondzisani Commerce?
           </h2>
           <p className="leading-7 [&:not(:first-child)]:my-6">
@@ -19,7 +19,7 @@ const About = () => {
             <em className="font-semibold text-primary">IEB and CAPS</em> .
           </p> */}
 
-          <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+          <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
             Why Choose Dyondzisani Commerce?
           </h2>
 
@@ -46,7 +46,7 @@ const About = () => {
         </section>
         <section className="col-span-2 gap-3 md:grid md:grid-cols-2 lg:col-auto lg:grid-cols-1">
           <div>
-            <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+            <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
               Our Mission
             </h2>
             <p className="text-xl text-muted-foreground">
@@ -60,7 +60,7 @@ const About = () => {
             </p>
           </div>
           <div className="">
-            <h3 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+            <h3 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
               What Our Students Say
             </h3>
             <TestimonialSlide />
