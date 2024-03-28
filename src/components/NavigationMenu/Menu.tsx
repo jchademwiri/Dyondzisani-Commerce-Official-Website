@@ -19,7 +19,7 @@ export function Menu() {
           {links.map((link, index) => (
             <Link key={link.href} href={link.href} legacyBehavior passHref>
               <NavigationMenuLink
-                className={`${navigationMenuTriggerStyle()} ${index === links.length - 1 ? "bg-primary" : ""} mx-1`}
+                className={`${navigationMenuTriggerStyle()} ${index === links.length - 1 ? "bg-primary uppercase text-white" : ""} mx-1`}
               >
                 {link.title}
               </NavigationMenuLink>
