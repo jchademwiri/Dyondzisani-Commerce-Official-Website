@@ -1,11 +1,12 @@
+import CallToAction from "@/components/CallToAction";
 import { AboutHero } from "@/components/Hero";
 import { TestimonialSlide } from "@/components/TestimonialSlide";
 
 const About = () => {
   return (
-    <>
+    <main>
       <AboutHero />
-      <main className="container my-8 max-w-7xl gap-4 lg:grid lg:grid-cols-3 ">
+      <section className="container my-8 max-w-7xl gap-4 lg:grid lg:grid-cols-3 ">
         <section className="col-span-2" id="whychooseus">
           {/* <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
             Who is Dyondzisani Commerce?
@@ -66,8 +67,9 @@ const About = () => {
             <TestimonialSlide />
           </div>
         </section>
-      </main>
-    </>
+      </section>
+      <CallToAction />
+    </main>
   );
 };
 export default About;
