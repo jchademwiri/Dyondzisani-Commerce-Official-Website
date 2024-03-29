@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const NewFooter = () => {
   return (
-    <div className="bg-muted/50">
-      <div className="container flex flex-col items-center px-5 py-6 sm:flex-row">
+    <div className="bg-muted">
+      <div className="container flex max-w-7xl flex-col items-center py-6 sm:flex-row">
         <a className="title-font flex items-center justify-center font-medium  md:justify-start">
           <Image
             src={logo}

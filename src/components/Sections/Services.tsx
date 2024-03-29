@@ -4,6 +4,7 @@ import ServiceCard from "../ServiceCard";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { accounting, business, economics } from "@/data/images";
 import Link from "next/link";
+import { accountsLink, businessLink, economicsLink } from "@/data/constrains";
 
 const Services = () => {
   return (
@@ -25,7 +26,7 @@ const Services = () => {
           image={accounting}
           title="Accounting"
           alt="accounting lessons"
-          link="/accounting"
+          link={accountsLink}
           description="Accounting is the process of recording financial transactions and information that take place in a business. Learners will be exposed to an in depth understanding of financial and managerial accounting, the importance corporate governance, Ethics and Auditing."
         />
 
@@ -34,7 +35,7 @@ const Services = () => {
           image={business}
           title="Business Studies"
           alt="business studies lessons"
-          link="/business"
+          link={businessLink}
           description="Business studies is board study that focuses on various aspects of running a business. It combines economics and accounting with more emphasis on management and creative strategy."
         />
 
@@ -43,7 +44,7 @@ const Services = () => {
           image={economics}
           title="Economics Studies"
           alt="economics studies lessons"
-          link="/economics"
+          link={economicsLink}
           description="Economics is a social science that focuses on the production, distribution, and consumption of goods and services. The focus is analysing the choices that individuals, businesses, governments, and global economy make to allocate limited resources."
         />
 

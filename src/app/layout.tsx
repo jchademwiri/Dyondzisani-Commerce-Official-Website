@@ -6,7 +6,6 @@ import { Inter } from "next/font/google";
 import Nav from "@/components/NavigationMenu/Nav";
 // import Footer from "@/components/Footer";
 import NewFooter from "@/components/Footer/footer";
-import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,7 +24,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className="scroll-smooth  focus:scroll-auto"
+      className="scroll-smooth focus:scroll-auto"
     >
       <body className={inter.className}>
         <ThemeProvider
@@ -39,7 +38,6 @@ export default function RootLayout({
           {/* <Footer /> */}
           <NewFooter />
           <Analytics />
-          {/* <BackgroundBeams /> */}
           <Toaster />
         </ThemeProvider>
       </body>

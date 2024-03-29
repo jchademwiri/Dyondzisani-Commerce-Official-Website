@@ -43,11 +43,11 @@ const ServiceCard = ({
         </CardHeader>
         <CardContent>{description}</CardContent>
       </div>
-      {/* <CardFooter>
+      <CardFooter>
         <Link href={link} className={`${color}`}>
           Read More
         </Link>
-      </CardFooter> */}
+      </CardFooter>
     </Card>
   );
 };
