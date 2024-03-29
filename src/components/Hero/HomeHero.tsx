@@ -4,10 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { Bolt, MessagesSquare } from "lucide-react";
 import { Button } from "../ui/button";
+import { whatsapplink } from "@/data/constrains";
+import { BackgroundBeams } from "../ui/background-beams";
 
 const HomeHero = () => {
   return (
-    <section className="container grid min-h-[80vh] max-w-7xl place-content-center gap-6 py-4 md:grid-cols-2 md:py-0">
+    <section className="container grid h-[80vh] max-w-7xl place-content-center gap-6 py-4 md:grid-cols-2 md:py-0">
       <div className="self-center">
         <h1 className="text-4xl font-bold sm:text-5xl ">
           Personalized Tutoring for Business & Economics Success
@@ -18,7 +20,12 @@ const HomeHero = () => {
           <em className="font-semibold text-primary">IEB and CAPS</em> ).
         </p>
         <div className="flex gap-4">
-          <Link href={"/"} className="hover:bg-destructive">
+          <Link
+            href={whatsapplink}
+            target="_blank"
+            rel="noreferrer"
+            className="hover:bg-destructive"
+          >
             <Button className="flex gap-2">
               <MessagesSquare />
               Let&apos;s Chat Now
@@ -39,6 +46,7 @@ const HomeHero = () => {
           className="flip h-full w-full rounded-md object-cover "
         />
       </div>
+      <BackgroundBeams />
     </section>
   );
 };

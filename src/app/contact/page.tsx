@@ -12,10 +12,13 @@ import {
 
 const Contact = () => {
   return (
-    <>
+    <main>
       <ContactHero />
-      <main className="container my-4 grid gap-4 md:grid-cols-2">
-        <Card className=" overflow-hidden bg-background/70">
+      <section
+        id="enquire"
+        className="container my-8 grid max-w-7xl gap-4 md:grid-cols-2"
+      >
+        <Card className="overflow-hidden bg-background/70">
           <CardHeader>
             <CardTitle>Contact Us Today</CardTitle>
           </CardHeader>
@@ -60,8 +63,8 @@ const Contact = () => {
             </CardDescription>
           </CardContent>
         </Card>
-      </main>
-    </>
+      </section>
+    </main>
   );
 };
 export default Contact;

@@ -6,7 +6,7 @@ import { Button } from "../ui/button";
 
 const AboutHero = () => {
   return (
-    <section className="box-shadow bg-[url('/images/glasses-bg.jpg')] bg-cover bg-no-repeat object-cover ">
+    <section className="box-shadow bg-[url('/images/glasses-bg.jpg')] bg-cover bg-center bg-no-repeat object-cover ">
       <div className="bg-background/80">
         <div className="container  flex min-h-[80vh] max-w-7xl  items-center gap-6  py-4 md:py-0">
           <div className="max-w-4xl  ">
@@ -32,13 +32,6 @@ const AboutHero = () => {
               </Link>
             </div>
           </div>
-          {/* <div className="h-auto">
-            <Image
-              src={bannerImage}
-              alt="hero section image"
-              className="flip h-full w-full rounded-md object-cover"
-            />
-          </div> */}
         </div>
       </div>
     </section>

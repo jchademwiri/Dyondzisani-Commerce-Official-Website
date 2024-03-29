@@ -64,3 +64,6 @@ body {
 .flip {
   transform: scaleX(-1);
 }
+html {
+  scroll-padding-top: 80px;
+}
