@@ -2,6 +2,7 @@
 
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetFooter,
@@ -40,10 +41,10 @@ export function MobileMenu() {
                 <div key={link.href}>
                   <Link href={link.href} legacyBehavior passHref>
                     <NavigationMenuLink
-                      className={`my-1 grid gap-2 rounded-sm p-2 hover:bg-accent
-                      ${index === links.length - 1 ? "bg-primary uppercase text-white" : ""}`}
+                      className={`my-1 grid place-items-start gap-2 rounded-sm p-2 hover:bg-accent
+                        ${index === links.length - 1 ? "bg-primary uppercase text-white" : ""}`}
                     >
-                      {link.title}
+                      <SheetClose>{link.title}</SheetClose>
                     </NavigationMenuLink>
                   </Link>
                 </div>

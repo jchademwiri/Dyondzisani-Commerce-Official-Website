@@ -1,17 +1,14 @@
-import { bannerImage, graduate } from "@/data/images";
-import Image from "next/image";
-
 import Link from "next/link";
 import { Button } from "../ui/button";
 
 const AboutHero = () => {
   return (
-    <section className="box-shadow bg-[url('/images/glasses-bg.jpg')] bg-cover bg-center bg-no-repeat object-cover ">
-      <div className="bg-background/80">
-        <div className="container  flex min-h-[80vh] max-w-7xl  items-center gap-6  py-4 md:py-0">
-          <div className="max-w-4xl  ">
+    <section className="box-shadow bg-[url('/images/glasses-bg.jpg')] bg-cover bg-center bg-no-repeat object-cover">
+      <div className="bg-background/70">
+        <div className="container flex min-h-[80vh] max-w-7xl  items-center gap-6  py-4 md:py-0">
+          <div className="md:max-w-3xl">
             <h1 className="text-4xl font-bold sm:text-5xl ">
-              Who is <em className="text-primary"> Dyondzisani Commerce</em> ?
+              Who is <em className="text-primary"> Dyondzisani Commerce</em>?
             </h1>
             <p className=" text-xl leading-7 [&:not(:first-child)]:my-6">
               Dyondzisani is a Xitsonga word that addresses a group of people to

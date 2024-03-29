@@ -1,5 +1,3 @@
-import Banner from "@/components/Banner";
-import ContactDetailsCard from "@/components/ContactDetailsCard";
 import ContactForm from "@/components/Forms/ContactForm";
 import ContactHero from "@/components/Hero/ContactHero";
 import {
@@ -14,11 +12,9 @@ const Contact = () => {
   return (
     <main>
       <ContactHero />
-      <section
-        id="enquire"
-        className="container my-8 grid max-w-7xl gap-4 md:grid-cols-2"
-      >
-        <Card className="overflow-hidden bg-background/70">
+      <section className="container grid max-w-7xl gap-4 py-5 md:grid-cols-2">
+        <div className="border">
+          {/* <Card className="overflow-hidden bg-background/70"> */}
           <CardHeader>
             <CardTitle>Contact Us Today</CardTitle>
           </CardHeader>
@@ -27,12 +23,32 @@ const Contact = () => {
               Contact us today using the below contact details to enroll your
               student.
             </CardDescription>
-            {/* Contact details Card  */}
-            <ContactDetailsCard />
           </CardContent>
-        </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>Raslaouw / Centurion</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                285 Erasmus Ave, Raslow AH, Centurion, 0157
+              </CardDescription>
+            </CardContent>
+          </Card>
 
-        <Card className="row-span-3 bg-background/70 ">
+          <Card>
+            <CardHeader>
+              <CardTitle>Four Ways</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                address 2 in four ways, Centurion, 0001
+              </CardDescription>
+            </CardContent>
+          </Card>
+          {/* </Card> */}
+        </div>
+
+        <Card id="enquire" className="row-span-3 bg-background/70 ">
           <CardHeader>
             <CardTitle>Contact Enquiry Form</CardTitle>
             <CardDescription>
@@ -43,26 +59,6 @@ const Contact = () => {
           <ContactForm />
         </Card>
         {/* <section className="grid gap-4 md:col-span-2 md:grid-cols-2"> */}
-        <Card className="bg-background/70">
-          <CardHeader>
-            <CardTitle>Centurion</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <CardDescription>
-              285 Erasmus Ave, Raslow AH, Centurion, 0157
-            </CardDescription>
-          </CardContent>
-        </Card>
-        <Card className="bg-background/70">
-          <CardHeader>
-            <CardTitle>Four Ways</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <CardDescription>
-              address 2 in four ways, Centurion, 0001
-            </CardDescription>
-          </CardContent>
-        </Card>
       </section>
     </main>
   );
