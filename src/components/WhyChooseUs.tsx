@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Boxes } from "./ui/background-boxes";
 import Link from "next/link";
@@ -10,16 +7,7 @@ import { whatsapplink } from "@/data/constrains";
 
 const WhyChooseUs = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0.5, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{
-        delay: 0.2,
-        duration: 0.8,
-        ease: "easeInOut",
-      }}
-      className="relative my-5 flex h-96 w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background"
-    >
+    <div className="relative my-5 flex h-96 w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
       <div className="pointer-events-none absolute inset-0 z-20 h-full w-full bg-background [mask-image:radial-gradient(transparent,white)]" />
 
       <Boxes />
@@ -48,7 +36,7 @@ const WhyChooseUs = () => {
           <Button className="flex gap-2">Learn More</Button>
         </Link>
       </div>
-    </motion.div>
+    </div>
   );
 };
 export default WhyChooseUs;

@@ -1,4 +1,3 @@
-"use client";
 export const links: { title: string; href: string }[] = [
   {
     title: "Home",

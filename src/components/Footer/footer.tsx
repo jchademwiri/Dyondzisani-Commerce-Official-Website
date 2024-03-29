@@ -6,14 +6,14 @@ const NewFooter = () => {
   return (
     <div className="bg-muted">
       <div className="container flex max-w-7xl flex-col items-center py-6 sm:flex-row">
-        <a className="title-font flex items-center justify-center font-medium  md:justify-start">
+        <a className="title-font flex items-center justify-center gap-3 font-medium  md:justify-start">
           <Image
             src={logo}
             alt="dyondzisani commerce logo"
             className="h-[30px] w-auto"
           />
-          <span className="ml-3 text-xl text-primary">
-            Dyondzisani Commerce
+          <span>
+            Dyondzisani <span className="text-primary">Commerce</span>
           </span>
         </a>
         <p className="mt-4 text-sm text-muted-foreground sm:ml-6 sm:mt-0">
