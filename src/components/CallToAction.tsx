@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const CallToAction = () => {
   return (
-    <div className="w-full bg-primary py-12 ">
-      <div className="container max-w-7xl justify-between gap-4 lg:flex lg:grid-cols-2 lg:items-center ">
+    <div className="w-full bg-primary py-12">
+      <div className="container max-w-7xl justify-between gap-4 text-white lg:flex lg:grid-cols-2 lg:items-center ">
         <div className="py-3">
           <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
             Emphasizing Personalized Learning
