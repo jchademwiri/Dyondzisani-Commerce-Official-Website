@@ -7,7 +7,7 @@ import { Button } from "../ui/button";
 
 const ContactHero = () => {
   return (
-    <section className="container grid min-h-[80vh] place-content-center gap-6 py-4 md:grid-cols-2 md:py-0">
+    <section className="container grid min-h-[80vh] max-w-7xl place-content-center gap-6 py-4 md:grid-cols-2 md:py-0">
       <div className="self-center">
         <h1 className="text-4xl font-bold sm:text-5xl ">Contact Hero</h1>
         <p className=" text-xl leading-7 [&:not(:first-child)]:my-6">

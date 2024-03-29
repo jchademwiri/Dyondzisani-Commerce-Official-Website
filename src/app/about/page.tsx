@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <AboutHero />
-      <main className="container my-8 gap-4 lg:grid lg:grid-cols-3 ">
+      <main className="container my-8 max-w-7xl gap-4 lg:grid lg:grid-cols-3 ">
         <section className="col-span-2" id="whychooseus">
           {/* <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
             Who is Dyondzisani Commerce?

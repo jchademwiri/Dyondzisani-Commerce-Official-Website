@@ -7,12 +7,12 @@ import Link from "next/link";
 
 const Services = () => {
   return (
-    <section id="services" className="container max-w-6xl py-5 ">
+    <section id="services" className="container max-w-7xl py-5 ">
       <header className="my-4 grid place-items-center text-center">
         <h2 className="scroll-m-20 border-b  pb-2 text-5xl font-semibold tracking-tight first:mt-0">
           Our Services
         </h2>
-        <p className="text-lg leading-7 [&:not(:first-child)]:mt-6">
+        <p className="max-w-4xl text-lg leading-7 [&:not(:first-child)]:mt-6">
           Dyondzisani Commerce strive for academic excellence in commercial
           subjects for Grade 8-12 IEB and CAPS. This will be achieved through
           providing classes and tutoring sessions to learners who wish to obtain
