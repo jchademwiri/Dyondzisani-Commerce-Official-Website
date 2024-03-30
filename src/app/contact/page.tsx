@@ -32,7 +32,7 @@ const Contact = () => {
             </CardHeader>
             <CardContent>
               <Map
-                address="Plot 88 - 265 Erasmus Ave, Raslow AH, Centurion, 0157"
+                address="Plot 88 - 285 Erasmus Ave, Raslow AH, Centurion, 0157"
                 location={centurion}
               />
             </CardContent>
