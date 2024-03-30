@@ -7,48 +7,49 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Map from "@/components/Map";
+import { centurion, fourWays } from "@/data/maps";
 
 const Contact = () => {
   return (
     <main>
       <ContactHero />
       <section className="container grid max-w-7xl gap-4 py-5 md:grid-cols-2">
-        <div className="border">
-          {/* <Card className="overflow-hidden bg-background/70"> */}
-          <CardHeader>
-            <CardTitle>Contact Us Today</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <CardDescription>
-              Contact us today using the below contact details to enroll your
-              student.
-            </CardDescription>
-          </CardContent>
+        <div className="grid gap-3">
+          <Card className="border-primary/50">
+            <CardHeader>
+              <CardTitle>Meet Up Points</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                Find The nearest meet-up location for your convinience.
+              </CardDescription>
+            </CardContent>
+          </Card>
           <Card>
             <CardHeader>
               <CardTitle>Raslaouw / Centurion</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription>
-                285 Erasmus Ave, Raslow AH, Centurion, 0157
-              </CardDescription>
+              <Map
+                address="Plot 88 - 265 Erasmus Ave, Raslow AH, Centurion, 0157"
+                location={centurion}
+              />
             </CardContent>
           </Card>
-
           <Card>
             <CardHeader>
               <CardTitle>Four Ways</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription>
-                address 2 in four ways, Centurion, 0001
-              </CardDescription>
+              <Map
+                address="11 Ruby Cl, Witkoppen, Sandton, 2068"
+                location={fourWays}
+              />
             </CardContent>
           </Card>
-          {/* </Card> */}
         </div>
-
-        <Card id="enquire" className="row-span-3 bg-background/70 ">
+        <Card id="enquire" className="bg-background/70 ">
           <CardHeader>
             <CardTitle>Contact Enquiry Form</CardTitle>
             <CardDescription>
@@ -64,3 +65,43 @@ const Contact = () => {
   );
 };
 export default Contact;
+
+{
+  /* <div className="border border-primary bg-destructive ">
+<Card>
+  <CardHeader>
+    <CardTitle>Contact Us Today</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <CardDescription>
+      Contact us today using the below contact details to enroll your
+      student.
+    </CardDescription>
+  </CardContent>
+
+  <Card>
+    <CardHeader>
+      <CardTitle>Raslaouw / Centurion</CardTitle>
+    </CardHeader>
+    <CardContent>
+      <CardDescription>
+        285 Erasmus Ave, Raslow AH, Centurion, 0157
+      </CardDescription>
+      <ContactMap />
+    </CardContent>
+  </Card>
+
+  <Card>
+    <CardHeader>
+      <CardTitle>Four Ways</CardTitle>
+    </CardHeader>
+    <CardContent>
+      <CardDescription>
+        address 2 in four ways, Centurion, 0001
+      </CardDescription>
+    </CardContent>
+  </Card>
+</Card> 
+</div>
+*/
+}
