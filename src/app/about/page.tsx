@@ -8,18 +8,6 @@ const About = () => {
       <AboutHero />
       <section className="container my-8 max-w-7xl gap-4 lg:grid lg:grid-cols-3 ">
         <section className="col-span-2" id="whychooseus">
-          {/* <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-            Who is Dyondzisani Commerce?
-          </h2>
-          <p className="leading-7 [&:not(:first-child)]:my-6">
-            Dyondzisani is a Xitsonga word that addresses a group of people to
-            teach. The company was founded by Teleni Mellisah Chauke, an
-            accountant, in 2022 while providing extra accounting lessons to
-            learner from Grade 8-12. The company grew in providing all commerce
-            subjects Accounting, Business Studies and Economics for{" "}
-            <em className="font-semibold text-primary">IEB and CAPS</em> .
-          </p> */}
-
           <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
             Why Choose Dyondzisani Commerce?
           </h2>

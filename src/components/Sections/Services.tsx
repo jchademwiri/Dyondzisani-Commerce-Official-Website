@@ -8,7 +8,7 @@ import { accountsLink, businessLink, economicsLink } from "@/data/constrains";
 const Services = () => {
   return (
     <section id="services" className="container max-w-7xl py-5 ">
-      <header className="my-4 grid place-items-center text-center">
+      <header className="my-4 grid md:place-items-center md:text-center">
         <h2 className="scroll-m-20 border-b  pb-2 text-5xl font-semibold tracking-tight first:mt-0">
           Our Services
         </h2>

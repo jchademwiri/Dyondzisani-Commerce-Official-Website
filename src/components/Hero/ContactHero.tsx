@@ -17,7 +17,7 @@ const ContactHero = () => {
       <div className="bg-background/80">
         <div className="container grid min-h-[80vh] max-w-7xl place-content-center gap-6 py-4 md:grid-cols-2 md:py-0">
           <div className="self-center">
-            <h1 className="text-4xl font-bold sm:text-5xl ">
+            <h1 className="text-3xl font-bold sm:text-5xl ">
               BCom Experts, Yet Teachers at heart
             </h1>
             <p className=" text-xl leading-7 [&:not(:first-child)]:my-6">
