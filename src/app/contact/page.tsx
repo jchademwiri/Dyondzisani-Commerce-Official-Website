@@ -18,17 +18,17 @@ const Contact = () => {
         <div className="grid gap-3">
           <Card className="border-primary/50">
             <CardHeader>
-              <CardTitle>Meet Up Points</CardTitle>
+              <CardTitle>Find Us</CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription>
-                Find The nearest meet-up location for your convinience.
+                Find The nearest location for your convinience.
               </CardDescription>
             </CardContent>
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Raslaouw / Centurion</CardTitle>
+              <CardTitle>Centurion</CardTitle>
             </CardHeader>
             <CardContent>
               <Map
@@ -39,11 +39,11 @@ const Contact = () => {
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Four Ways</CardTitle>
+              <CardTitle>Sandton</CardTitle>
             </CardHeader>
             <CardContent>
               <Map
-                address="11 Ruby Cl, Witkoppen, Sandton, 2068"
+                address="Payne Rd, Bryanston, Johannesburg, 2191"
                 location={fourWays}
               />
             </CardContent>

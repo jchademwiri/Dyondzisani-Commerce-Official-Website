@@ -11,13 +11,13 @@ const HomeHero = () => {
         <div className="container flex min-h-[80vh] max-w-7xl  items-center gap-6  py-4 md:py-0">
           <div className="md:max-w-3xl">
             <h1 className="text-3xl font-bold sm:text-5xl ">
-              Personalized tutoring for commerce subjects.
+              Extra classes & Personalized tutoring for commerce subjects.
             </h1>
             <p className=" text-xl leading-7 [&:not(:first-child)]:my-6">
-              We&apos;re BCom experts, with a teacher&apos;s heart. Get
-              one-on-one tutoring tailored to your child&apos;s needs and
-              curriculum from grade 8 to grade 12 ({" "}
-              <em className="font-semibold text-primary">IEB and CAPS</em> ).
+              We&apos;re BCom experts, yet teacher&apos;s heart. Providing extra
+              classes & one-on-one sessions for Accounting, Economics & Business
+              Studies to high school learners{" "}
+              <em className="font-semibold text-primary">IEB and CAPS</em>.
             </p>
             <div className="flex gap-4">
               <Link

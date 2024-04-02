@@ -42,7 +42,7 @@ export function MobileMenu() {
                   <Link href={link.href} legacyBehavior passHref>
                     <NavigationMenuLink
                       className={`my-1 grid place-items-start gap-2 rounded-sm p-2 hover:bg-accent
-                        ${index === links.length - 1 ? "bg-primary uppercase text-white" : ""}`}
+                        ${index === links.length - 1 ? "" : ""}`}
                     >
                       <SheetClose>{link.title}</SheetClose>
                     </NavigationMenuLink>

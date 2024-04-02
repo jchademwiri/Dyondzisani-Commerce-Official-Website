@@ -45,9 +45,7 @@ const ContactDetailsCard = () => {
         className="my-2 flex items-center gap-4 hover:text-primary/80"
       >
         <Map size={30} />
-        <p className="text-lg">
-          Another location: 285 Erasmus Ave, Raslouw AH, Centurion
-        </p>
+        <p className="text-lg">Payne Rd, Bryanston, Johannesburg, 2191</p>
       </Link>
     </section>
   );

@@ -18,11 +18,13 @@ const About = () => {
           <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
             <li>We have a heart for teaching</li>
             <li>
-              Our team have practical commerce exposure in the following
-              industries Health, Manufacturing, entertainment, Education,
-              Energy, Logistics
+              Our team have practical commerce exposure in multiple industries
             </li>
-            <li>We obtain BCom Qualifications</li>
+            <li>We&apos;ve obtained BCom Qualifications</li>
+            <li>
+              Our teaching environment is a combination of corporate business
+              structure & traditional classes
+            </li>
           </ul>
           <p className="leading-7 [&:not(:first-child)]:my-6">
             We firmly believe that commerce is what truly makes the world go
@@ -49,8 +51,8 @@ const About = () => {
             </p>
           </div>
           <div className="">
-            <h3 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-              What Our Students Say
+            <h3 className="scroll-m-20 pb-2 text-2xl font-semibold tracking-tight first:mt-0">
+              What Our Parents & Learners Say:
             </h3>
             <TestimonialSlide />
           </div>

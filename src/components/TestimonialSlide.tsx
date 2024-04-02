@@ -24,10 +24,9 @@ export function TestimonialSlide() {
       <CarouselContent>
         {testimonials.map((testimony, index) => (
           <CarouselItem key={index}>
-            <blockquote className="my-6 border-l-2 pl-6  italic text-muted-foreground">
+            <blockquote className="my-6 border-l-2 border-primary pl-6  italic text-muted-foreground">
               &quot;{testimony.quote}&quot;
             </blockquote>
-
             <span className="text-sm text-muted-foreground ">
               {testimony.title}
             </span>

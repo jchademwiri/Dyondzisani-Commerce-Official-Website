@@ -58,8 +58,8 @@ const ContactHero = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Contact us today using the form below contact details to
-                  enroll your student.
+                  Contact us today using the form below contact details to enrol
+                  your child now.
                 </CardDescription>
                 {/* Contact details Card  */}
                 <ContactDetailsCard />

@@ -23,8 +23,8 @@ const grades = [
 
 const subjects = [
   {
-    id: "accounts",
-    label: "Accounts",
+    id: "accounting",
+    label: "Accounting",
   },
   {
     id: "businessStudies",

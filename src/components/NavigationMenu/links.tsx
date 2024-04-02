@@ -11,8 +11,8 @@ export const links: { title: string; href: string }[] = [
     title: "Contact",
     href: "/contact",
   },
-  {
-    title: "CONTACT US NOW",
-    href: "/contact",
-  },
+  // {
+  //   title: "CONTACT US NOW",
+  //   href: "/contact",
+  // },
 ];

@@ -136,7 +136,7 @@ const ContactForm = () => {
                   name="learnerFullName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Fullname Name</FormLabel>
+                      <FormLabel>Full Name</FormLabel>
                       <FormControl>
                         <Input placeholder="e.g: Mike Dlamini" {...field} />
                       </FormControl>

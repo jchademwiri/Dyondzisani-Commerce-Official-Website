@@ -11,12 +11,18 @@ const AboutHero = () => {
               Who is <em className="text-primary"> Dyondzisani Commerce</em>?
             </h1>
             <p className=" text-xl leading-7 [&:not(:first-child)]:my-6">
-              Dyondzisani is a Xitsonga word that addresses a group of people to
-              teach. The company was founded by Teleni Mellisah Chauke, an
-              accountant, in 2022 while providing extra accounting lessons to
-              learner from Grade 8-12. The company grew in providing all
-              commerce subjects Accounting, Business Studies and Economics for{" "}
-              <em className="font-semibold text-primary"> IEB and CAPS</em>.
+              Dyondzisani meaning{" "}
+              <em className="font-semibold text-primary">Teach</em> in Xitsonga,
+              has been transforming learning for high school learners (
+              <em className="font-semibold text-primary">IEB and CAPS</em>)
+              since 2022. Our educational service is commerce centered by
+              providing accounting , business studies and economics teaching
+              services. With personalized and practical learning at our core, we
+              empower learners to understand and excel.{" "}
+              <span className="font-semibold text-primary">
+                Join us on the journey of theoretical and practical commerce
+                success!
+              </span>
             </p>
             <div className="flex gap-4">
               <Link href={"#whychooseus"} className="hover:bg-destructive">
