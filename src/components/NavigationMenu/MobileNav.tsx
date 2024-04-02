@@ -2,6 +2,7 @@
 
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetFooter,
@@ -30,18 +31,20 @@ export function MobileMenu() {
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
-          <SheetTitle>Navigation Menu</SheetTitle>
-          <SheetDescription>We are at your service.</SheetDescription>
+          <SheetTitle>Dyondzisani Commerce</SheetTitle>
+          <SheetDescription>We have a heart for teaching.</SheetDescription>
         </SheetHeader>
-
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem className="my-4">
-              {links.map((link) => (
+              {links.map((link, index) => (
                 <div key={link.href}>
                   <Link href={link.href} legacyBehavior passHref>
-                    <NavigationMenuLink className="grid gap-2 rounded-sm p-2 hover:bg-accent">
-                      {link.title}
+                    <NavigationMenuLink
+                      className={`my-1 grid place-items-start gap-2 rounded-sm p-2 hover:bg-accent
+                        ${index === links.length - 1 ? "" : ""}`}
+                    >
+                      <SheetClose>{link.title}</SheetClose>
                     </NavigationMenuLink>
                   </Link>
                 </div>
@@ -49,7 +52,7 @@ export function MobileMenu() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        <SheetFooter className="flex-row sm:justify-start gap-2">
+        <SheetFooter className="flex-row gap-2 sm:justify-start">
           <Button size={"icon"} variant={"outline"}>
             <Link href="/" className="p-2">
               <Facebook />
