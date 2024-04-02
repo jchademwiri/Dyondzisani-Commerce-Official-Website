@@ -16,7 +16,7 @@ const HomeHero = () => {
             <p className=" text-xl leading-7 [&:not(:first-child)]:my-6">
               We&apos;re BCom experts, with a teacher&apos;s heart. Get
               one-on-one tutoring tailored to your child&apos;s needs and
-              curriculum ({" "}
+              curriculum from grade 8 to grade 12 ({" "}
               <em className="font-semibold text-primary">IEB and CAPS</em> ).
             </p>
             <div className="flex gap-4">
