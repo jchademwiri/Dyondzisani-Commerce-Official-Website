@@ -16,7 +16,7 @@ const NewFooter = () => {
             Dyondzisani <span className="text-primary">Commerce</span>
           </span>
         </a>
-        <p className="mt-4 text-sm text-muted-foreground sm:ml-6 sm:mt-0">
+        <p className="mt-4 text-center text-sm text-muted-foreground sm:ml-6 sm:mt-0">
           &copy; {new Date().getFullYear()} Copyright Reserved —
           <Link
             href="https://twitter.com/jchademwiri"
