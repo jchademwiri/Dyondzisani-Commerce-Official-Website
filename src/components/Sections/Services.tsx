@@ -26,7 +26,7 @@ const Services = () => {
           title="Accounting"
           alt="accounting lessons"
           link={accountsLink}
-          description="Accounting is the process of recording financial transactions and information that take place in a business. Learners will be exposed to an in depth understanding of financial and managerial accounting, the importance corporate governance, Ethics and Auditing."
+          description="Accounting is the process of recording financial transactions that take place in  a business. Learners will be taught an in-depth understanding of financial and management accounting. This will also be incorporated with auditing, ethics and corporate governance."
         />
 
         <ServiceCard
@@ -35,7 +35,7 @@ const Services = () => {
           title="Business Studies"
           alt="business studies lessons"
           link={businessLink}
-          description="Business studies is board study that focuses on various aspects of running a business. It combines economics and accounting with more emphasis on management and creative strategy."
+          description="Business studies is a branch of social sciences that explores factors such as finance, strategy, legislation, economics and management. Learners will be learners how these factors affect a business."
         />
 
         <ServiceCard
