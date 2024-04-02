@@ -14,9 +14,12 @@ const Services = () => {
         </h2>
         <p className="max-w-4xl text-lg leading-7 [&:not(:first-child)]:mt-6">
           Dyondzisani Commerce strive for academic excellence in commercial
-          subjects for Grade 8-12 IEB and CAPS. This will be achieved through
-          providing classes and tutoring sessions to learners who wish to obtain
-          academic excellence.
+          subjects for{" "}
+          <em className="font-semibold text-primary">
+            Grade 8-12 IEB and CAPS
+          </em>
+          . This will be achieved through providing classes and tutoring
+          sessions to learners who wish to obtain academic excellence.
         </p>
       </header>
       <section className="my-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
