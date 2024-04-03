@@ -38,7 +38,7 @@ const Services = () => {
           title="Business Studies"
           alt="business studies lessons"
           link={businessLink}
-          description="Business studies is a branch of social sciences that explores factors such as finance, strategy, legislation, economics and management. Learners will be learners how these factors affect a business."
+          description="Business studies is a branch of social sciences that explores factors such as finance, strategy, legislation, economics and management. Learners will be learning how these factors affect a business."
         />
 
         <ServiceCard

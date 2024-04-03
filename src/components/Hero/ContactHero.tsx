@@ -16,6 +16,7 @@ const ContactHero = () => {
     <section className="box-shadow bg-[url('/images/school-boy.webp')] bg-cover bg-center bg-no-repeat object-cover ">
       <div className="bg-background/80">
         <div className="container grid min-h-[80vh] max-w-7xl place-content-center gap-6 py-4 md:grid-cols-2 md:py-0">
+          {/* <div className="container flex min-h-[80vh] max-w-7xl  items-center gap-6  py-4 md:py-0">  */}
           <div className="self-center">
             <h1 className="text-3xl font-bold sm:text-5xl ">
               BCom Experts, Yet Teachers at heart
@@ -26,46 +27,41 @@ const ContactHero = () => {
               curriculum ({" "}
               <em className="font-semibold text-primary">IEB and CAPS</em> ).
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-col gap-4 xs:flex-row">
               <Link
                 href={whatsapplink}
                 target="_blank"
                 rel="noreferrer"
                 className="hover:bg-destructive"
               >
-                <Button className="flex gap-2">
+                <Button className="flex w-full gap-2">
                   <MessagesSquare />
                   Let&apos;s Chat Now
                 </Button>
               </Link>
               <Link href={"#enquire"}>
-                <Button variant={"destructive"} className="flex gap-2">
+                <Button variant={"destructive"} className="flex w-full gap-2">
                   <Bolt />
                   Enquire Now
                 </Button>
               </Link>
             </div>
           </div>
-          <div className="h-auto">
-            {/* <Image
-          src={bannerImage}
-          alt="hero section image"
-          className="flip h-full w-full rounded-md object-cover "
-        /> */}
-            <Card className=" overflow-hidden bg-background/30">
-              <CardHeader>
-                <CardTitle>Contact Us Today</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  Contact us today using the form below contact details to enrol
-                  your child now.
-                </CardDescription>
-                {/* Contact details Card  */}
-                <ContactDetailsCard />
-              </CardContent>
-            </Card>
-          </div>
+          {/* <div className="h-auto"> */}
+          <Card className="overflow-hidden bg-background/30">
+            <CardHeader>
+              <CardTitle>Contact Us Today</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                Contact us today using the form below contact details to enrol
+                your child now.
+              </CardDescription>
+              {/* Contact details Card  */}
+              <ContactDetailsCard />
+            </CardContent>
+          </Card>
+          {/* </div> */}
         </div>
       </div>
     </section>

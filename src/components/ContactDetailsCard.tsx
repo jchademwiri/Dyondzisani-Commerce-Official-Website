@@ -34,14 +34,18 @@ const ContactDetailsCard = () => {
         <p className="text-lg">{email}</p>
       </Link>
       <Link
-        href={"/"}
+        href={"https://maps.app.goo.gl/RhvTidLotNcyJnB8A"}
+        target="_blank"
+        rel="noopener noreferrer"
         className="my-2 flex items-center gap-4 hover:text-primary/80"
       >
         <Map size={30} />
         <p className="text-lg">285 Erasmus Ave, Raslouw AH, Centurion</p>
       </Link>
       <Link
-        href={"/"}
+        href={"https://maps.app.goo.gl/WwaEHw7vcqze57mJ8"}
+        target="_blank"
+        rel="noopener noreferrer"
         className="my-2 flex items-center gap-4 hover:text-primary/80"
       >
         <Map size={30} />

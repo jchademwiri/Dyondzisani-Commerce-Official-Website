@@ -9,6 +9,15 @@ import {
 } from "@/components/ui/card";
 import Map from "@/components/Map";
 import { centurion, fourWays } from "@/data/maps";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Dyondzisani Commerce Official Website",
+  alternates: {
+    canonical: `/contact`,
+  },
+};
 
 const Contact = () => {
   return (

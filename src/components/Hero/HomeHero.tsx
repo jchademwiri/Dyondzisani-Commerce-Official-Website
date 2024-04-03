@@ -19,20 +19,21 @@ const HomeHero = () => {
               Studies to high school learners{" "}
               <em className="font-semibold text-primary">IEB and CAPS</em>.
             </p>
-            <div className="flex gap-4">
+            {/* TODO: Update screen size  */}
+            <div className="xs:flex-row flex flex-col gap-4">
               <Link
                 href={whatsapplink}
                 target="_blank"
                 rel="noreferrer"
                 className="hover:bg-destructive"
               >
-                <Button className="flex gap-2">
+                <Button className="flex w-full gap-2">
                   <MessagesSquare />
                   Let&apos;s Chat Now
                 </Button>
               </Link>
               <Link href={"#services"}>
-                <Button variant={"destructive"} className="flex gap-2">
+                <Button variant={"destructive"} className="flex w-full gap-2">
                   <Bolt />
                   Our Services
                 </Button>
