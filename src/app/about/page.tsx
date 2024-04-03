@@ -1,6 +1,15 @@
 import CallToAction from "@/components/CallToAction";
 import { AboutHero } from "@/components/Hero";
 import { TestimonialSlide } from "@/components/TestimonialSlide";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "Dyondzisani Commerce Official Website",
+  alternates: {
+    canonical: `/about`,
+  },
+};
 
 const About = () => {
   return (
