@@ -2,6 +2,7 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import { useFormStatus } from "react-dom";
 import { Button } from "../ui/button";
 import {
   Form,
@@ -21,6 +22,8 @@ import { toast } from "../ui/use-toast";
 import { grades, subjects } from "@/data/formdata";
 import formSchema, { TFormSchema } from "@/lib/validation";
 import { SendEmail } from "@/app/actions";
+import { useState } from "react";
+import Spinner from "../Spinner";
 
 const ContactForm = () => {
   // 1. Define your form.
@@ -38,9 +41,12 @@ const ContactForm = () => {
       subjects: [],
     },
   });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
   // 2. Define a submit handler.
   // function onSubmit(data: TFormSchema) {
   async function onSubmit(data: TFormSchema) {
+    setIsSubmitting(true);
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
     toast({
@@ -56,7 +62,9 @@ const ContactForm = () => {
     console.log(data);
     await SendEmail(data);
     form.reset();
+    setIsSubmitting(false);
   }
+
   return (
     <>
       <CardContent>
@@ -282,7 +290,9 @@ const ContactForm = () => {
                 />
               </div>
             </div>
-            <Button type="submit">Submit</Button>
+            <Button type="submit" disabled={isSubmitting}>
+              Submit {isSubmitting && <Spinner />}
+            </Button>
           </form>
         </Form>
       </CardContent>

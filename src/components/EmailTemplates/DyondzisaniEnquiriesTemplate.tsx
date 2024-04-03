@@ -40,7 +40,7 @@ export const DyondzisaniCommerceTemplate = ({
 }: DyondzisaniCommerceTemplateProps) => (
   <Html>
     <Head />
-    <Preview>Dyondzisani Commerce Template</Preview>
+    <Preview>Dyondzisani Commerce Enrolment</Preview>
     <Tailwind>
       <Body className="bg-gray-100 font-sans text-gray-600">
         <Container className=" my-6 rounded-t-md bg-white shadow-sm">
