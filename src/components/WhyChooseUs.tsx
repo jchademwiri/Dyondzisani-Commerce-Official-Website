@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Boxes } from "./ui/background-boxes";
+// import { Boxes } from "./ui/background-boxes";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { MessagesSquare } from "lucide-react";
@@ -10,7 +10,7 @@ const WhyChooseUs = () => {
     <div className="relative my-5 flex h-96 w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
       <div className="pointer-events-none absolute inset-0 z-20 h-full w-full bg-background [mask-image:radial-gradient(transparent,white)]" />
 
-      <Boxes />
+      {/* <Boxes /> */}
 
       <h2
         className={cn(
