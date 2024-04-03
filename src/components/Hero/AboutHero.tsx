@@ -19,10 +19,13 @@ const AboutHero = () => {
               providing accounting , business studies and economics teaching
               services. With personalized and practical learning at our core, we
               empower learners to understand and excel.{" "}
-              <span className="font-semibold text-primary">
+              <Link
+                href={"/contact#enquire"}
+                className="font-semibold text-primary hover:text-destructive"
+              >
                 Join us on the journey of theoretical and practical commerce
                 success!
-              </span>
+              </Link>
             </p>
             <div className="flex gap-4">
               <Link href={"#whychooseus"} className="hover:bg-destructive">

@@ -15,12 +15,12 @@ export const SendEmail = async ({
 }: TFormSchema) => {
   try {
     const resend: any = new Resend(process.env.RESEND_API_KEY);
-    const emailBody = await resend.emails.send({
+    await resend.emails.send({
       from: `Dyodzisani Commerce Website <enquiries@dyondzisanicommerce.co.za>`,
       to: `info@dyondzisanicommerce.co.za`,
       cc: `${email}`,
       replyTo: `info@dyondzisanicommerce.co.za`,
-      subject: `Dev Server Test: New Student Enrolment`,
+      subject: `New Student Enrolment`,
       react: DyondzisaniCommerceTemplate({
         firstName,
         lastName,
