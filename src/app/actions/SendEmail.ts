@@ -19,7 +19,7 @@ export const SendEmail = async ({
       from: `Dyodzisani Commerce Website <enquiries@dyondzisanicommerce.co.za>`,
       to: `info@dyondzisanicommerce.co.za`,
       cc: `${email}`,
-      replyTo: `info@dyondzisanicommerce.co.za`,
+      reply_to: `info@dyondzisanicommerce.co.za`,
       subject: `New Student Enrolment`,
       react: DyondzisaniCommerceTemplate({
         firstName,
