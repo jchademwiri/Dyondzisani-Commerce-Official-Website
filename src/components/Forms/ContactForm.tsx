@@ -2,7 +2,7 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { useFormStatus } from "react-dom";
+import { sendGAEvent } from "@next/third-parties/google";
 import { Button } from "../ui/button";
 import {
   Form,
@@ -49,6 +49,7 @@ const ContactForm = () => {
     setIsSubmitting(true);
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
+    await SendEmail(data);
     toast({
       title: `Thank You ${data.firstName}`,
       description: (
@@ -59,8 +60,8 @@ const ContactForm = () => {
         </pre>
       ),
     });
-    console.log(data);
-    await SendEmail(data);
+    // console.log(data);
+
     form.reset();
     setIsSubmitting(false);
   }
@@ -290,7 +291,13 @@ const ContactForm = () => {
                 />
               </div>
             </div>
-            <Button type="submit" disabled={isSubmitting}>
+            <Button
+              type="submit"
+              disabled={isSubmitting}
+              onClick={() =>
+                sendGAEvent({ event: "buttonClicked", value: "Form Submited" })
+              }
+            >
               Submit {isSubmitting && <Spinner />}
             </Button>
           </form>
