@@ -1,6 +1,7 @@
 import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Nav from "@/components/NavigationMenu/Nav";
@@ -89,6 +90,7 @@ export default function RootLayout({
           <Toaster />
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="G-GP407E3PGQ" />
     </html>
   );
 }
