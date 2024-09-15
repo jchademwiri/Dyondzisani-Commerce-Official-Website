@@ -1,4 +1,3 @@
-import ContactForm from "@/components/Forms/ContactForm";
 import ContactHero from "@/components/Hero/ContactHero";
 import {
   Card,
@@ -10,6 +9,7 @@ import {
 import Map from "@/components/Map";
 import { centurion, fourWays } from "@/data/maps";
 import { Metadata } from "next";
+import BasicEducationEnrolmentForm from "@/forms/BasicEducationEnrolmentForm";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -66,7 +66,7 @@ const Contact = () => {
             </CardDescription>
           </CardHeader>
           {/* Contact Form  */}
-          <ContactForm />
+          <BasicEducationEnrolmentForm />
         </Card>
         {/* <section className="grid gap-4 md:col-span-2 md:grid-cols-2"> */}
       </section>

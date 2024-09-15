@@ -3,7 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { sendGAEvent } from "@next/third-parties/google";
-import { Button } from "../ui/button";
+import { Button } from "../components/ui/button";
 import {
   Form,
   FormControl,
@@ -12,20 +12,20 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "../ui/form";
-import { Input } from "../ui/input";
-import { CardContent, CardTitle } from "../ui/card";
-import { Textarea } from "../ui/textarea";
-import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
-import { Checkbox } from "../ui/checkbox";
-import { toast } from "../ui/use-toast";
+} from "../components/ui/form";
+import { Input } from "../components/ui/input";
+import { CardContent, CardTitle } from "../components/ui/card";
+import { Textarea } from "../components/ui/textarea";
+import { RadioGroup, RadioGroupItem } from "../components/ui/radio-group";
+import { Checkbox } from "../components/ui/checkbox";
+import { toast } from "../components/ui/use-toast";
 import { grades, subjects } from "@/data/formdata";
 import formSchema, { TFormSchema } from "@/lib/validation";
 import { SendEmail } from "@/app/actions";
 import { useState } from "react";
-import Spinner from "../Spinner";
+import Spinner from "../components/Spinner";
 
-const ContactForm = () => {
+const BasicEducationEnrolmentForm = () => {
   // 1. Define your form.
   const form = useForm<TFormSchema>({
     resolver: zodResolver(formSchema),
@@ -306,4 +306,4 @@ const ContactForm = () => {
     </>
   );
 };
-export default ContactForm;
+export default BasicEducationEnrolmentForm;
