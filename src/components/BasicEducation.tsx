@@ -1,6 +1,6 @@
 import ServiceCard from "./ServiceCard";
 import { beAccounting, beBusiness, beEconomics } from "@/data/images";
-import { accountsLink, businessLink, economicsLink } from "@/data/constrains";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +13,7 @@ export const BasicEducation = () => {
         <ServiceCard key={index} {...card} />
       ))}
 
-      <Card className="hidden sm:block lg:hidden">
+      {/* <Card className="hidden sm:block lg:hidden">
         <Image
           src={beAccounting}
           alt="Accounting-lessons"
@@ -30,7 +30,7 @@ export const BasicEducation = () => {
           an in depth understanding of financial and managerial accounting, the
           importance corporate governance, Ethics and Auditing.{" "}
         </CardContent>
-      </Card>
+      </Card> */}
     </section>
   );
 };

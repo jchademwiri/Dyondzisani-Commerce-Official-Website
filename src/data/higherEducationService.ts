@@ -1,4 +1,9 @@
-import { accountsLink, businessLink, economicsLink } from "./constrains";
+import {
+  heAccountingLink,
+  heAuditingLink,
+  heFinancialManagementLink,
+  heTaxationLink,
+} from "./constrains";
 import {
   heAccounting,
   heAuditing,
@@ -11,35 +16,36 @@ export const higherEducationService = [
     image: heAccounting,
     title: "Accounting",
     alt: "accounting lessons",
-    link: accountsLink,
+    link: heAccountingLink,
     description:
-      "Accounting is the process of recording financial transactions that take place in  a business. Learners will be taught an in-depth understanding of financial and management accounting. This will also be incorporated with auditing, ethics and corporate governance.",
-  },
-  {
-    color: "text-primary",
-    image: heAuditing,
-    title: "Auditing",
-    alt: "auditing lessons",
-    link: businessLink,
-    description:
-      "Business studies is a branch of social sciences that explores factors such as finance, strategy, legislation, economics and management. Learners will be learning how these factors affect a business.",
+      "According to companies Acts 2008, all financial statements need to be prepared in accordance with International Financial Reporting Standards. Students will be taught in depth to ensure they understand identification, recognition, initial and subsequent measurement, and presentation and disclosures of these topics.",
   },
   {
     color: "text-yellow-500",
     image: heFinancialManagement,
     title: "Financial Management",
     alt: "financial management lessons",
-    link: economicsLink,
+    link: heFinancialManagementLink,
     description:
-      "Economics is a social science that focuses on the production, distribution, and consumption of goods and services. The focus is analysing the choices that individuals, businesses, governments, and global economy make to allocate limited resources.",
+      "Financial management consists of Corporate Finance, Management and Costing. Students will be learning the qualitative and quantitative factors in planning, controlling finances of a business. This will add to decision making and the understanding of how shareholders wealth is maximized.",
   },
   {
-    color: "text-green-500",
+    color: "text-[#951110]",
+    image: heAuditing,
+    title: "Auditing",
+    alt: "auditing lessons",
+    link: heAuditingLink,
+    description:
+      "Auditors whether the statements under review present a fair and materially correct representation financial statements, resulting in an audit opinion. This will be incorporated with ethics and corporate governance.",
+  },
+
+  {
+    color: "text-[#EFAD2B]",
     image: heTaxation,
     title: "Taxation",
     alt: "taxation lessons",
-    link: economicsLink,
+    link: heTaxationLink,
     description:
-      "Taxation is a crucial aspect of financial planning and management. This course covers various types of taxes, tax laws, and strategies for effective tax planning. Students will learn about income tax, corporate tax, and international taxation principles.",
+      "South African Tax Act. A legislation that governs how individuals are taxed in South Africa. Students will be exposed to the following: VAT, income tax, estate duty, antiviolence, capital gains tax, case laws employees’ tax and many other tax related topics. ",
   },
 ];

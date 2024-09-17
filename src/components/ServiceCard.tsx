@@ -27,7 +27,7 @@ const ServiceCard = ({
   color,
 }: ServiceCardProps) => {
   return (
-    <Card className="flex flex-col justify-between">
+    <Card className={`flex flex-col justify-between`}>
       <div>
         <Image
           src={image}
@@ -37,14 +37,17 @@ const ServiceCard = ({
           className="w-full rounded-t-lg bg-cover object-cover"
         />
         <CardHeader>
-          <CardTitle className="hover:text-primary">
+          <CardTitle>
             <Link href={link}>{title}</Link>
           </CardTitle>
         </CardHeader>
         <CardContent>{description}</CardContent>
       </div>
       <CardFooter>
-        <Link href={link} className={`${color}`}>
+        <Link
+          href={link}
+          className={`${color} transition-opacity duration-200 hover:opacity-80`}
+        >
           Read More
         </Link>
       </CardFooter>
