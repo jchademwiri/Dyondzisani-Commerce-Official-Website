@@ -2,7 +2,7 @@
 
 import BasicEducationEnrolmentEmail from "@/emails/BasicEducationEnrolmentEmail";
 
-import { TFormSchema } from "@/lib/validation";
+import { TBasicEducationFormSchema } from "@/lib/validation";
 import { Resend } from "resend";
 export const SendBasicEducationEmail = async ({
   firstName,
@@ -14,7 +14,7 @@ export const SendBasicEducationEmail = async ({
   curriculum,
   subjects,
   medicalCondition,
-}: TFormSchema) => {
+}: TBasicEducationFormSchema) => {
   try {
     const resend: any = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({

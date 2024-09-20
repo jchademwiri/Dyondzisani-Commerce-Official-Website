@@ -20,10 +20,8 @@ interface HigherEducationEnrolmentEmailProps {
   lastName: string;
   email: string;
   phone: string;
-  learnerFullName: string;
-  learnerGrade: string;
-  curriculum: string;
-  subjects: string[];
+  yearOfStudy: string;
+  modules: string[];
   medicalCondition: string;
 }
 
@@ -32,10 +30,8 @@ export const HigherEducationEnrolmentEmail = ({
   lastName = "Doe",
   email = "john.doe@example.com",
   phone = "065 723 6771",
-  learnerFullName = "John Doe",
-  learnerGrade = "12",
-  curriculum = "CAPS",
-  subjects = ["Maths", "Science", "English", "History"],
+  yearOfStudy = "2nd Year",
+  modules = ["Accounting", "Business Studies", "Economics"],
   medicalCondition = "No medical conditions",
 }: HigherEducationEnrolmentEmailProps) => (
   <Html>
@@ -54,32 +50,22 @@ export const HigherEducationEnrolmentEmail = ({
           <Section className="px-6 text-[16px] leading-6">
             <Section>
               <Heading as="h2" className="text-[#F26222]">
-                Parent / Guardian Details
+                Learner&apos;s Details
               </Heading>
               <Text>
                 Full Name: {firstName} {lastName}
               </Text>
               <Text>Email Address: {email}</Text>
               <Text>Phone Number: {phone}</Text>
-            </Section>
-            <Hr className="border-[#EFAD2B]" />
-            <Section>
-              <Heading as="h2" className="text-[#F26222]">
-                Learner&apos;s Details
-              </Heading>
-              <Text>Full Name: {learnerFullName}</Text>
-              <Text>Grade: {learnerGrade}</Text>
-              <Text>Curriculum: {curriculum}</Text>
-              <Text>Subjects: {subjects.join(", ")}</Text>
+              <Text>Year of Study: {yearOfStudy}</Text>
+              <Text>Modules: {modules.join(", ")}</Text>
               <Text>Medical Condition: {medicalCondition}</Text>
             </Section>
+
             <Hr className="border-[#EFAD2B]" />
             <Section>
               <Row>
-                <Text>
-                  065 723 6771 | info@dyondzisanicommerce.co.za |
-                  www.dyondzisanicommerce.co.za
-                </Text>
+                <Text>065 723 6771 | info@dyondzisanicommerce.co.za</Text>
               </Row>
             </Section>
           </Section>

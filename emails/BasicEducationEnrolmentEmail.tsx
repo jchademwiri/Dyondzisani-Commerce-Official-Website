@@ -75,10 +75,7 @@ export const BasicEducationEnrolmentEmail = ({
             <Hr className="border-[#EFAD2B]" />
             <Section>
               <Row>
-                <Text>
-                  065 723 6771 | info@dyondzisanicommerce.co.za |
-                  www.dyondzisanicommerce.co.za
-                </Text>
+                <Text>065 723 6771 | info@dyondzisanicommerce.co.za</Text>
               </Row>
             </Section>
           </Section>

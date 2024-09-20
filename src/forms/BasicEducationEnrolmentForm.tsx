@@ -19,16 +19,20 @@ import { Textarea } from "../components/ui/textarea";
 import { RadioGroup, RadioGroupItem } from "../components/ui/radio-group";
 import { Checkbox } from "../components/ui/checkbox";
 import { toast } from "../components/ui/use-toast";
-import { grades, basicEducationSubjects } from "@/data/formdata";
-import formSchema, { TFormSchema } from "@/lib/validation";
+import { basicEducationGrades, basicEducationSubjects } from "@/data/formdata";
 import { SendBasicEducationEmail } from "@/app/actions";
 import { useState } from "react";
+
 import Spinner from "../components/Spinner";
+import {
+  basicEducationFormSchema,
+  TBasicEducationFormSchema,
+} from "@/lib/validation";
 
 const BasicEducationEnrolmentForm = () => {
   // 1. Define your form.
-  const form = useForm<TFormSchema>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<TBasicEducationFormSchema>({
+    resolver: zodResolver(basicEducationFormSchema),
     defaultValues: {
       firstName: "",
       lastName: "",
@@ -45,7 +49,7 @@ const BasicEducationEnrolmentForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   // 2. Define a submit handler.
   // function onSubmit(data: TFormSchema) {
-  async function onSubmit(data: TFormSchema) {
+  async function onSubmit(data: TBasicEducationFormSchema) {
     setIsSubmitting(true);
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
@@ -252,7 +256,7 @@ const BasicEducationEnrolmentForm = () => {
                           className="flex flex-col space-y-1"
                         >
                           {/* Learner grade options  */}
-                          {grades.map((grade) => (
+                          {basicEducationGrades.map((grade) => (
                             <FormItem
                               key={grade.id}
                               className="flex items-center space-x-3 space-y-0"

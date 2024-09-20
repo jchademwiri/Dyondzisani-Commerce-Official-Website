@@ -1,4 +1,4 @@
-const grades = [
+const basicEducationGrades = [
   {
     id: "Grade8",
     label: "Grade 8",
@@ -36,7 +36,7 @@ const basicEducationSubjects = [
   },
 ] as const;
 
-const higherEducationSubjects = [
+const higherEducationModules = [
   {
     id: "accounting",
     label: "Accounting",
@@ -55,4 +55,28 @@ const higherEducationSubjects = [
   },
 ] as const;
 
-export { grades, basicEducationSubjects, higherEducationSubjects };
+const higherEducationYearsOfStudy = [
+  {
+    id: "firstYear",
+    label: "1st Year",
+  },
+  {
+    id: "secondYear",
+    label: "2nd Year",
+  },
+  {
+    id: "thirdYear",
+    label: "3rd Year",
+  },
+  {
+    id: "fourthYear",
+    label: "4th Year",
+  },
+] as const;
+
+export {
+  basicEducationGrades,
+  basicEducationSubjects,
+  higherEducationModules,
+  higherEducationYearsOfStudy,
+};
