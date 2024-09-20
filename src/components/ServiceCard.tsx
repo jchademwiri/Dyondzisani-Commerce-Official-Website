@@ -7,7 +7,6 @@ import {
   CardTitle,
 } from "./ui/card";
 import Link from "next/link";
-import { Button } from "./ui/button";
 
 type ServiceCardProps = {
   image: StaticImageData;
@@ -45,10 +44,10 @@ const ServiceCard = ({
       </div>
       <CardFooter>
         <Link
-          href={link}
+          href="/enrol"
           className={`${color} transition-opacity duration-200 hover:opacity-80`}
         >
-          Read More
+          Enrol Now
         </Link>
       </CardFooter>
     </Card>
