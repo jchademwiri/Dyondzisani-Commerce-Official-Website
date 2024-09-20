@@ -10,6 +10,9 @@ import Map from "@/components/Map";
 import { centurion, fourWays } from "@/data/maps";
 import { Metadata } from "next";
 import BasicEducationEnrolmentForm from "@/forms/BasicEducationEnrolmentForm";
+import HigherEducationEnrolmentForm from "@/forms/HigherEducationEnrolmentForm";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { BasicEducation } from "@/components/BasicEducation";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -58,7 +61,7 @@ const Contact = () => {
             </CardContent>
           </Card>
         </div>
-        <Card id="enquire" className="bg-background/70 ">
+        <Card id="enquire" className="bg-background/70">
           <CardHeader>
             <CardTitle>Contact Enquiry Form</CardTitle>
             <CardDescription>
@@ -66,7 +69,25 @@ const Contact = () => {
             </CardDescription>
           </CardHeader>
           {/* Contact Form  */}
-          <BasicEducationEnrolmentForm />
+          <section className="grid place-items-center">
+            <Tabs defaultValue="basiceducation" className="max-w-5xl">
+              <TabsList className="grid w-full grid-cols-2">
+                {/* bg-primary/20 */}
+                <TabsTrigger value="basiceducation" className="font-semibold">
+                  Basic Education
+                </TabsTrigger>
+                <TabsTrigger value="highereducation" className="font-semibold">
+                  Higher Education
+                </TabsTrigger>
+              </TabsList>
+              <TabsContent value="basiceducation">
+                <BasicEducationEnrolmentForm />
+              </TabsContent>
+              <TabsContent value="highereducation">
+                <HigherEducationEnrolmentForm />
+              </TabsContent>
+            </Tabs>
+          </section>
         </Card>
         {/* <section className="grid gap-4 md:col-span-2 md:grid-cols-2"> */}
       </section>

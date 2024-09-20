@@ -22,7 +22,7 @@ export const SendBasicEducationEmail = async ({
       to: `info@dyondzisanicommerce.co.za`,
       cc: `${email}`,
       reply_to: `info@dyondzisanicommerce.co.za`,
-      subject: `New Student Enrolment`,
+      subject: `Basic Education Student Enrolment`,
       react: BasicEducationEnrolmentEmail({
         firstName,
         lastName,
