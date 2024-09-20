@@ -1,8 +1,10 @@
 "use server";
-import { DyondzisaniCommerceTemplate } from "@/components/EmailTemplates";
+
+import BasicEducationEnrolmentEmail from "@/emails/BasicEducationEnrolmentEmail";
+
 import { TFormSchema } from "@/lib/validation";
 import { Resend } from "resend";
-export const SendEmail = async ({
+export const SendBasicEducationEmail = async ({
   firstName,
   lastName,
   email,
@@ -21,7 +23,7 @@ export const SendEmail = async ({
       cc: `${email}`,
       reply_to: `info@dyondzisanicommerce.co.za`,
       subject: `New Student Enrolment`,
-      react: DyondzisaniCommerceTemplate({
+      react: BasicEducationEnrolmentEmail({
         firstName,
         lastName,
         email,
@@ -33,7 +35,7 @@ export const SendEmail = async ({
         medicalCondition,
       }),
     });
-    return console.log(`Email Sent`);
+    return console.log(`Basic Education Email Sent`);
   } catch (error) {
     return console.log(error);
   }

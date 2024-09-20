@@ -1,2 +1,2 @@
-import { SendEmail } from "./SendEmail";
-export { SendEmail };
+import { SendBasicEducationEmail } from "./SendBasicEducationEmail";
+export { SendBasicEducationEmail };

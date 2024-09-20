@@ -21,7 +21,7 @@ const grades = [
   },
 ] as const;
 
-const subjects = [
+const basicEducationSubjects = [
   {
     id: "accounting",
     label: "Accounting",
@@ -36,4 +36,23 @@ const subjects = [
   },
 ] as const;
 
-export { grades, subjects };
+const higherEducationSubjects = [
+  {
+    id: "accounting",
+    label: "Accounting",
+  },
+  {
+    id: "financialManagement",
+    label: "Financial Management",
+  },
+  {
+    id: "auditing",
+    label: "Auditing",
+  },
+  {
+    id: "taxation",
+    label: "Taxation",
+  },
+] as const;
+
+export { grades, basicEducationSubjects, higherEducationSubjects };

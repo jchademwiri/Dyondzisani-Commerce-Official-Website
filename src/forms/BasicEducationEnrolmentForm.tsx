@@ -19,9 +19,9 @@ import { Textarea } from "../components/ui/textarea";
 import { RadioGroup, RadioGroupItem } from "../components/ui/radio-group";
 import { Checkbox } from "../components/ui/checkbox";
 import { toast } from "../components/ui/use-toast";
-import { grades, subjects } from "@/data/formdata";
+import { grades, basicEducationSubjects } from "@/data/formdata";
 import formSchema, { TFormSchema } from "@/lib/validation";
-import { SendEmail } from "@/app/actions";
+import { SendBasicEducationEmail } from "@/app/actions";
 import { useState } from "react";
 import Spinner from "../components/Spinner";
 
@@ -49,7 +49,7 @@ const BasicEducationEnrolmentForm = () => {
     setIsSubmitting(true);
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
-    await SendEmail(data);
+    await SendBasicEducationEmail(data);
     toast({
       title: `Thank You ${data.firstName}`,
       description: (
@@ -76,7 +76,7 @@ const BasicEducationEnrolmentForm = () => {
               <CardTitle className="border-b border-primary/30 py-4">
                 Parent / Guardian Details
               </CardTitle>
-              <div className="my-4 grid gap-4 md:grid-cols-2 ">
+              <div className="my-4 grid gap-4 md:grid-cols-2">
                 <FormField
                   control={form.control}
                   name="firstName"
@@ -196,7 +196,7 @@ const BasicEducationEnrolmentForm = () => {
                           Select the subjects you want to study.
                         </FormDescription>
                       </div>
-                      {subjects.map((subject) => (
+                      {basicEducationSubjects.map((subject) => (
                         <FormField
                           key={subject.id}
                           control={form.control}
