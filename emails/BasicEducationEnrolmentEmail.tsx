@@ -44,7 +44,7 @@ export const BasicEducationEnrolmentEmail = ({
       <Body className="bg-gray-100 font-sans text-gray-600">
         <Container className="my-6 rounded-t-md bg-white shadow-sm">
           <Img
-            src={`https://dev.dyondzisanicommerce.co.za/email/email-banner.png`}
+            src={`https://dyondzisanicommerce.co.za/email/email-banner.png`}
             width="100%"
             height="auto"
             className="bg-cover object-cover"

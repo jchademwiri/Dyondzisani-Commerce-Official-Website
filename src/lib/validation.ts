@@ -69,6 +69,29 @@ const higherEducationFormSchema = z.object({
   }),
 });
 
+const contactFormSchema = z.object({
+  firstName: z.string().min(2, {
+    message: "First Name must be at least 2 characters.",
+  }),
+  lastName: z.string().min(2, {
+    message: "Last Name must be at least 2 characters.",
+  }),
+  email: z.string().email({
+    message: "Invalid email address.",
+  }),
+  phone: z.string().min(10, {
+    message: "Phone number must be at least 10 characters.",
+  }),
+  subject: z.string().min(2, {
+    message: "Subject must be at least 2 characters.",
+  }),
+  message: z.string().min(2, {
+    message: "Message must be at least 2 characters.",
+  }),
+});
+
+export type TContactFormSchema = z.infer<typeof contactFormSchema>;
+
 export type TBasicEducationFormSchema = z.infer<
   typeof basicEducationFormSchema
 >;
@@ -77,4 +100,8 @@ export type THigherEducationFormSchema = z.infer<
   typeof higherEducationFormSchema
 >;
 
-export { basicEducationFormSchema, higherEducationFormSchema };
+export {
+  basicEducationFormSchema,
+  higherEducationFormSchema,
+  contactFormSchema,
+};

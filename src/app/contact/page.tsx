@@ -9,10 +9,7 @@ import {
 import Map from "@/components/Map";
 import { centurion, fourWays } from "@/data/maps";
 import { Metadata } from "next";
-import BasicEducationEnrolmentForm from "@/forms/BasicEducationEnrolmentForm";
-import HigherEducationEnrolmentForm from "@/forms/HigherEducationEnrolmentForm";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { BasicEducation } from "@/components/BasicEducation";
+import { ContactForm } from "@/forms";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -68,70 +65,12 @@ const Contact = () => {
               Fill in the form below to enquire about our services.
             </CardDescription>
           </CardHeader>
-          {/* Contact Form  */}
-          <section className="grid place-items-center">
-            <Tabs defaultValue="basiceducation" className="max-w-5xl">
-              <TabsList className="grid w-full grid-cols-2">
-                {/* bg-primary/20 */}
-                <TabsTrigger value="basiceducation" className="font-semibold">
-                  Basic Education
-                </TabsTrigger>
-                <TabsTrigger value="highereducation" className="font-semibold">
-                  Higher Education
-                </TabsTrigger>
-              </TabsList>
-              <TabsContent value="basiceducation">
-                <BasicEducationEnrolmentForm />
-              </TabsContent>
-              <TabsContent value="highereducation">
-                <HigherEducationEnrolmentForm />
-              </TabsContent>
-            </Tabs>
+          <section className="">
+            <ContactForm />
           </section>
         </Card>
-        {/* <section className="grid gap-4 md:col-span-2 md:grid-cols-2"> */}
       </section>
     </main>
   );
 };
 export default Contact;
-
-{
-  /* <div className="border border-primary bg-destructive ">
-<Card>
-  <CardHeader>
-    <CardTitle>Contact Us Today</CardTitle>
-  </CardHeader>
-  <CardContent>
-    <CardDescription>
-      Contact us today using the below contact details to enroll your
-      student.
-    </CardDescription>
-  </CardContent>
-
-  <Card>
-    <CardHeader>
-      <CardTitle>Raslaouw / Centurion</CardTitle>
-    </CardHeader>
-    <CardContent>
-      <CardDescription>
-        285 Erasmus Ave, Raslow AH, Centurion, 0157
-      </CardDescription>
-      <ContactMap />
-    </CardContent>
-  </Card>
-
-  <Card>
-    <CardHeader>
-      <CardTitle>Four Ways</CardTitle>
-    </CardHeader>
-    <CardContent>
-      <CardDescription>
-        address 2 in four ways, Centurion, 0001
-      </CardDescription>
-    </CardContent>
-  </Card>
-</Card> 
-</div>
-*/
-}

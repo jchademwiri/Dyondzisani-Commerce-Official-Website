@@ -26,8 +26,8 @@ import {
   higherEducationFormSchema,
   THigherEducationFormSchema,
 } from "@/lib/validation";
-import { SendHigherEducationEmail } from "@/app/actions/SendHigherEducationEmail";
 import { useState } from "react";
+import { SendHigherEducationEmail } from "@/app/actions";
 
 const HigherEducationEnrolmentForm = () => {
   const form = useForm<THigherEducationFormSchema>({
