@@ -5,12 +5,12 @@ const AboutHero = () => {
   return (
     <section className="box-shadow bg-[url('/images/glasses-bg.jpg')] bg-cover bg-center bg-no-repeat object-cover">
       <div className="bg-background/80">
-        <div className="container flex min-h-[80vh] max-w-7xl items-center gap-6  py-4 md:py-0">
+        <div className="container flex min-h-[80vh] max-w-7xl items-center gap-6 py-4 md:py-0">
           <div className="md:max-w-3xl">
-            <h1 className="text-4xl font-bold sm:text-5xl ">
+            <h1 className="text-4xl font-bold sm:text-5xl">
               Who is <em className="text-primary"> Dyondzisani Commerce</em>?
             </h1>
-            <p className=" text-xl leading-7 [&:not(:first-child)]:my-6">
+            {/* <p className="text-xl leading-7 [&:not(:first-child)]:my-6">
               Dyondzisani meaning{" "}
               <em className="font-semibold text-primary">Teach</em> in Xitsonga,
               has been transforming learning for high school learners (
@@ -26,8 +26,29 @@ const AboutHero = () => {
                 Join us on the journey of theoretical and practical commerce
                 success!
               </Link>
+            </p> */}
+            <p className="text-xl leading-7 [&:not(:first-child)]:my-6">
+              Dyondzisani, meaning{" "}
+              <em className="font-semibold text-primary">Teach</em> in Xitsonga,
+              has been transforming commerce education for high school learners
+              (<em className="font-semibold text-primary">IEB and CAPS</em>)
+              since 2022. We specialize in providing Accounting, Business
+              Studies, and Economics tutoring with a personalized, practical
+              approach. Now, we also offer tailored support for{" "}
+              <em className="font-semibold text-destructive">
+                higher education students
+              </em>
+              , helping them excel in both theoretical and practical commerce
+              studies.{" "}
+              <Link
+                href={"/contact#enquire"}
+                className="font-semibold text-primary hover:text-destructive"
+              >
+                Join us on the journey of theoretical and practical commerce
+                success!
+              </Link>
             </p>
-            <div className="flex  flex-col gap-4 xs:flex-row">
+            <div className="flex flex-col gap-4 xs:flex-row">
               <Link href={"#whychooseus"} className="hover:bg-destructive">
                 <Button className="flex w-full gap-2">Why Choose Us?</Button>
               </Link>
