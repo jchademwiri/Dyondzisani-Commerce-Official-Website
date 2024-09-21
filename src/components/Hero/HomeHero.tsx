@@ -6,21 +6,33 @@ import { whatsapplink } from "@/data/constrains";
 
 const HomeHero = () => {
   return (
-    <section className="box-shadow bg-[url('/images/school-boy.webp')] bg-cover bg-center bg-no-repeat object-cover ">
+    <section className="box-shadow bg-[url('/images/school-boy.webp')] bg-cover bg-center bg-no-repeat object-cover">
       <div className="bg-background/80">
-        <div className="container flex min-h-[80vh] max-w-7xl  items-center gap-6  py-4 md:py-0">
+        <div className="container flex min-h-[80vh] max-w-7xl items-center gap-6 py-4 md:py-0">
           <div className="md:max-w-3xl">
-            <h1 className="text-3xl font-bold sm:text-5xl ">
+            <h1 className="text-3xl font-bold sm:text-5xl">
               Extra classes & Personalized tutoring for commerce subjects.
             </h1>
-            <p className=" text-xl leading-7 [&:not(:first-child)]:my-6">
+            {/* <p className=" text-xl leading-7 [&:not(:first-child)]:my-6">
               We&apos;re BCom experts, yet teacher&apos;s heart. Providing extra
               classes & one-on-one sessions for Accounting, Economics & Business
               Studies to high school learners{" "}
               <em className="font-semibold text-primary">IEB and CAPS</em>.
+            </p> */}
+            <p className="text-xl leading-7 [&:not(:first-child)]:my-6">
+              We&apos;re BCom experts with a teacher&apos;s heart, providing
+              extra classes and one-on-one sessions for Accounting, Economics,
+              and Business Studies to high school learners{" "}
+              <em className="font-semibold text-primary">IEB and CAPS</em>, as
+              well as tailored support for{" "}
+              <em className="font-semibold text-destructive">
+                higher education students
+              </em>
+              .
             </p>
+
             {/* TODO: Update screen size  */}
-            <div className="xs:flex-row flex flex-col gap-4">
+            <div className="flex flex-col gap-4 xs:flex-row">
               <Link
                 href={whatsapplink}
                 target="_blank"

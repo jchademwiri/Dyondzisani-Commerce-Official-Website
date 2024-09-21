@@ -35,7 +35,7 @@ const Contact = () => {
               </CardDescription>
             </CardContent>
           </Card>
-          <Card>
+          {/* <Card>
             <CardHeader>
               <CardTitle>Centurion</CardTitle>
             </CardHeader>
@@ -45,7 +45,7 @@ const Contact = () => {
                 location={centurion}
               />
             </CardContent>
-          </Card>
+          </Card> */}
           <Card>
             <CardHeader>
               <CardTitle>Sandton</CardTitle>
