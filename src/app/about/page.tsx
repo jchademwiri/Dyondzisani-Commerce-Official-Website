@@ -15,7 +15,7 @@ const About = () => {
   return (
     <main>
       <AboutHero />
-      <section className="container my-8 max-w-7xl gap-4  lg:grid lg:grid-cols-3 ">
+      <section className="container my-8 max-w-7xl gap-4 lg:grid lg:grid-cols-3">
         <section className="col-span-2" id="whychooseus">
           <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
             Why Choose Dyondzisani Commerce?
@@ -49,12 +49,13 @@ const About = () => {
             <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
               Our Mission
             </h2>
-            <p className="text-xl text-muted-foreground">
-              Dyondzisani Commerce strive for academic excellence in commercial
+            <p className="leading-7 text-muted-foreground">
+              Dyondzisani Commerce strives for academic excellence in commercial
               subjects for{" "}
               <em className="font-semibold text-primary">
-                Grade 8-12 IEB and CAPS
-              </em>{" "}
+                {" "}
+                basic education and commerce modules for Higher education
+              </em>
               . This will be achieved through providing classes and tutoring
               sessions to learners who wish to obtain academic excellence.
             </p>

@@ -8,15 +8,16 @@ import { logo } from "@/data/images";
 const Nav = () => {
   return (
     <nav className="sticky top-0 z-50 border-b bg-background shadow-sm">
-      <div className="container flex max-w-7xl items-center justify-between  py-4">
-        <Link href="/" className="flex items-center gap-2 font-semibold ">
+      <div className="container flex max-w-7xl items-center justify-between py-4">
+        <Link href="/" className="flex items-center gap-2 font-semibold">
           <Image
             src={logo}
             alt="dyondzisani commerce logo"
             className="h-[30px] w-auto"
           />
-          <span className="hidden sm:inline">
+          <span className="hidden text-2xl font-bold sm:inline">
             Dyondzisani <span className="text-primary">Commerce</span>
+            {/* D<span className="text-primary">C.</span> */}
           </span>
         </Link>
         <div className="flex items-center gap-1">

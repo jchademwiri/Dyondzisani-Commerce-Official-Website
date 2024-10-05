@@ -13,22 +13,18 @@ const HomeHero = () => {
             <h1 className="text-3xl font-bold sm:text-5xl">
               Extra classes & Personalized tutoring for commerce subjects.
             </h1>
-            {/* <p className=" text-xl leading-7 [&:not(:first-child)]:my-6">
-              We&apos;re BCom experts, yet teacher&apos;s heart. Providing extra
-              classes & one-on-one sessions for Accounting, Economics & Business
-              Studies to high school learners{" "}
-              <em className="font-semibold text-primary">IEB and CAPS</em>.
-            </p> */}
+            {/* 
+              Dyondzisani Commerce (DC) is an educational organization that focuses on providing tutorial services and extra classes. We specialize in teaching commercial subjects from Basic Education <em className="font-semibold text-primary">IEB and CAPS</em> to <em className="font-semibold text-destructive">Higher education</em> (All related of commerce modules).
+              */}
             <p className="text-xl leading-7 [&:not(:first-child)]:my-6">
-              We&apos;re BCom experts with a teacher&apos;s heart, providing
-              extra classes and one-on-one sessions for Accounting, Economics,
-              and Business Studies to high school learners{" "}
-              <em className="font-semibold text-primary">IEB and CAPS</em>, as
-              well as tailored support for{" "}
+              Dyondzisani Commerce <b>(DC)</b> is an educational organization
+              that focuses on providing tutorial services and extra classes. We
+              specialize in teaching commercial subjects from Basic Education{" "}
+              <em className="font-semibold text-primary">IEB and CAPS</em> to{" "}
               <em className="font-semibold text-destructive">
-                higher education students
-              </em>
-              .
+                Higher education
+              </em>{" "}
+              (All related of commerce modules).
             </p>
 
             {/* TODO: Update screen size  */}
@@ -37,7 +33,7 @@ const HomeHero = () => {
                 href={whatsapplink}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:bg-destructive"
+                className=""
               >
                 <Button className="flex w-full gap-2">
                   <MessagesSquare />

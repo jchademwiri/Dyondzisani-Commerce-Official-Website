@@ -42,14 +42,6 @@ const ServiceCard = ({
         </CardHeader>
         <CardContent>{description}</CardContent>
       </div>
-      <CardFooter>
-        <Link
-          href="/enrol"
-          className={`${color} transition-opacity duration-200 hover:opacity-80`}
-        >
-          Enrol Now
-        </Link>
-      </CardFooter>
     </Card>
   );
 };
