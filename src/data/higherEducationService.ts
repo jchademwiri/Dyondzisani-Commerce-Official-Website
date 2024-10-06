@@ -12,7 +12,7 @@ import {
 } from "./images";
 export const higherEducationService = [
   {
-    color: "text-destructive",
+    color: "destructive",
     image: heAccounting,
     title: "Accounting",
     alt: "accounting lessons",
@@ -21,7 +21,7 @@ export const higherEducationService = [
       "According to companies Acts 2008, all financial statements need to be prepared in accordance with International Financial Reporting Standards. Students will be taught in depth to ensure they understand identification, recognition, initial and subsequent measurement, and presentation and disclosures of these topics.",
   },
   {
-    color: "text-yellow-500",
+    color: "primary",
     image: heFinancialManagement,
     title: "Financial Management",
     alt: "financial management lessons",
@@ -30,7 +30,7 @@ export const higherEducationService = [
       "Financial management consists of Corporate Finance, Management and Costing. Students will be learning the qualitative and quantitative factors in planning, controlling finances of a business. This will add to decision making and the understanding of how shareholders wealth is maximized.",
   },
   {
-    color: "text-[#951110]",
+    color: "[#951110]",
     image: heAuditing,
     title: "Auditing",
     alt: "auditing lessons",
@@ -40,7 +40,7 @@ export const higherEducationService = [
   },
 
   {
-    color: "text-[#EFAD2B]",
+    color: "[#EFAD2B]",
     image: heTaxation,
     title: "Taxation",
     alt: "taxation lessons",

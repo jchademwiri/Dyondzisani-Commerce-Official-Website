@@ -37,7 +37,9 @@ const ServiceCard = ({
         />
         <CardHeader>
           <CardTitle>
-            <Link href={link}>{title}</Link>
+            <Link href={link} className={`text-${color}`}>
+              {title}
+            </Link>
           </CardTitle>
         </CardHeader>
         <CardContent>{description}</CardContent>

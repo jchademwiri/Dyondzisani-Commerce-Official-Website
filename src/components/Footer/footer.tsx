@@ -6,7 +6,7 @@ const NewFooter = () => {
   return (
     <div className="bg-muted">
       <div className="container flex max-w-7xl flex-col items-center py-6 sm:flex-row">
-        <a className="title-font flex items-center justify-center gap-3 font-medium  md:justify-start">
+        <a className="title-font flex items-center justify-center gap-3 font-medium md:justify-start">
           <Image
             src={logo}
             alt="dyondzisani commerce logo"
@@ -24,7 +24,7 @@ const NewFooter = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            @PlayhouseMediaGroup
+            Site By: Jacob Chademwiri
           </Link>
         </p>
         <span className="mt-4 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start">
