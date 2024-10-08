@@ -24,7 +24,7 @@ const NewFooter = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Site By: Jacob Chademwiri
+            @PlayhouseMediaGroup
           </Link>
         </p>
         <span className="mt-4 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start">

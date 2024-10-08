@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Map from "@/components/Map";
-import { fourWays } from "@/data/maps";
+import { centurion, fourWays } from "@/data/maps";
 import { Metadata } from "next";
 import { ContactForm } from "@/forms";
 
@@ -26,13 +26,14 @@ const Contact = () => {
       <section className="container my-6 grid max-w-7xl">
         {/* <div className="grid gap-3"> */}
         <Card>
-          <CardHeader>
-            <CardTitle>Sandton</CardTitle>
-          </CardHeader>
-          <CardContent>
+          <CardContent className="grid gap-3 md:grid-cols-2">
             <Map
               address="Payne Rd, Bryanston, Johannesburg, 2191"
               location={fourWays}
+            />
+            <Map
+              address="285 Erasmus Ave, Raslouw AH, Centurion, 0157"
+              location={centurion}
             />
           </CardContent>
         </Card>

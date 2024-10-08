@@ -18,10 +18,10 @@ import {
 } from "@/data/constrains";
 import { BsWhatsapp } from "react-icons/bs";
 
-const info = "info@dycommerce.co.za";
-const help = "help@dycommerce.co.za";
-const accounts = "accounts@dycommerce.co.za";
-const mel = "mel@dycommerce.co.za";
+const info = "info@dyondzisanicommerce.co.za";
+const help = "help@dyondzisanicommerce.co.za";
+const accounts = "accounts@dyondzisanicommerce.co.za";
+const mel = "mel@dyondzisanicommerce.co.za";
 
 const emails = [
   {
