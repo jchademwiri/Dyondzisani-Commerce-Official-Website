@@ -10,10 +10,10 @@ const HomeHero = () => {
       <div className="bg-background/80">
         <div className="container flex min-h-[80vh] max-w-7xl items-center gap-6 py-4 md:py-0">
           <div className="md:max-w-3xl">
-            <h1 className="text-3xl font-bold sm:text-4xl">
+            <h1 className="text-2xl font-bold sm:text-5xl">
               Dyondzisani Commerce
               <br />
-              <span className="text-2xl sm:text-xl">
+              <span className="text-xl sm:text-2xl">
                 BCom Experts, Yet Teachers at heart
               </span>
             </h1>
