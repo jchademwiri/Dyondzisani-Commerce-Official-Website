@@ -8,7 +8,7 @@ const Home = () => {
     <main>
       <HomeHero />
       <Services />
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
       <CallToAction />
     </main>
   );

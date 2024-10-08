@@ -3,7 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { sendGAEvent } from "@next/third-parties/google";
-import { Button } from "../ui/button";
+import { Button } from "../components/ui/button";
 import {
   Form,
   FormControl,
@@ -12,23 +12,27 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "../ui/form";
-import { Input } from "../ui/input";
-import { CardContent, CardTitle } from "../ui/card";
-import { Textarea } from "../ui/textarea";
-import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
-import { Checkbox } from "../ui/checkbox";
-import { toast } from "../ui/use-toast";
-import { grades, subjects } from "@/data/formdata";
-import formSchema, { TFormSchema } from "@/lib/validation";
-import { SendEmail } from "@/app/actions";
+} from "../components/ui/form";
+import { Input } from "../components/ui/input";
+import { CardContent, CardTitle } from "../components/ui/card";
+import { Textarea } from "../components/ui/textarea";
+import { RadioGroup, RadioGroupItem } from "../components/ui/radio-group";
+import { Checkbox } from "../components/ui/checkbox";
+import { toast } from "../components/ui/use-toast";
+import { basicEducationGrades, basicEducationSubjects } from "@/data/formdata";
+import { SendBasicEducationEmail } from "@/app/actions";
 import { useState } from "react";
-import Spinner from "../Spinner";
 
-const ContactForm = () => {
+import Spinner from "../components/Spinner";
+import {
+  basicEducationFormSchema,
+  TBasicEducationFormSchema,
+} from "@/lib/validation";
+
+const BasicEducationEnrolmentForm = () => {
   // 1. Define your form.
-  const form = useForm<TFormSchema>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<TBasicEducationFormSchema>({
+    resolver: zodResolver(basicEducationFormSchema),
     defaultValues: {
       firstName: "",
       lastName: "",
@@ -45,11 +49,11 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   // 2. Define a submit handler.
   // function onSubmit(data: TFormSchema) {
-  async function onSubmit(data: TFormSchema) {
+  async function onSubmit(data: TBasicEducationFormSchema) {
     setIsSubmitting(true);
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
-    await SendEmail(data);
+    await SendBasicEducationEmail(data);
     toast({
       title: `Thank You ${data.firstName}`,
       description: (
@@ -76,7 +80,7 @@ const ContactForm = () => {
               <CardTitle className="border-b border-primary/30 py-4">
                 Parent / Guardian Details
               </CardTitle>
-              <div className="my-4 grid gap-4 md:grid-cols-2 ">
+              <div className="my-4 grid gap-4 md:grid-cols-2">
                 <FormField
                   control={form.control}
                   name="firstName"
@@ -196,7 +200,7 @@ const ContactForm = () => {
                           Select the subjects you want to study.
                         </FormDescription>
                       </div>
-                      {subjects.map((subject) => (
+                      {basicEducationSubjects.map((subject) => (
                         <FormField
                           key={subject.id}
                           control={form.control}
@@ -252,7 +256,7 @@ const ContactForm = () => {
                           className="flex flex-col space-y-1"
                         >
                           {/* Learner grade options  */}
-                          {grades.map((grade) => (
+                          {basicEducationGrades.map((grade) => (
                             <FormItem
                               key={grade.id}
                               className="flex items-center space-x-3 space-y-0"
@@ -306,4 +310,4 @@ const ContactForm = () => {
     </>
   );
 };
-export default ContactForm;
+export default BasicEducationEnrolmentForm;

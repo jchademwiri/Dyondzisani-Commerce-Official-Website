@@ -26,13 +26,13 @@ const ContactDetailsCard = () => {
         <BsWhatsapp size={30} />
         <p className="text-lg">{phoneNumber}</p>
       </Link>
-      <Link
+      {/* <Link
         href={`${emailLink}?subject=Enrolment%20inquiry&body=Good%20day,%0D%0AI%20would%20like%20to%20enquire%20about%20your%20services.`}
         className="my-2 flex items-center gap-4 hover:text-primary/80"
       >
         <Mail size={30} />
         <p className="text-lg">{email}</p>
-      </Link>
+      </Link> */}
       <Link
         href={"https://maps.app.goo.gl/RhvTidLotNcyJnB8A"}
         target="_blank"

@@ -1,15 +1,18 @@
+import { CardHeader, CardTitle } from "./ui/card";
+
 interface Map {
   address: string;
   location: string;
+  
 }
 
-const Map = ({ address, location }: Map) => {
+const Map = ({ address, location,  }: Map) => {
   return (
-    <div className="relative flex min-h-[300px] w-full items-end justify-start overflow-hidden rounded-lg bg-muted-foreground/40 px-10 py-4 sm:mr-10 md:p-12">
+    <div className="relative mt-6 flex min-h-[400px] w-full items-end justify-start overflow-hidden rounded-lg bg-muted-foreground/40 px-10 py-6 sm:mr-10 md:p-12">
       <iframe
         width="100%"
         height="100%"
-        className="absolute inset-0  "
+        className="absolute inset-0"
         title="map"
         src={location}
       ></iframe>
@@ -21,6 +24,7 @@ const Map = ({ address, location }: Map) => {
           <p className="mt-1">{address}</p>
         </div>
       </div>
+     
     </div>
   );
 };

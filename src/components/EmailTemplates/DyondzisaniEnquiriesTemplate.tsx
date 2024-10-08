@@ -43,7 +43,7 @@ export const DyondzisaniCommerceTemplate = ({
     <Preview>Dyondzisani Commerce Enrolment</Preview>
     <Tailwind>
       <Body className="bg-gray-100 font-sans text-gray-600">
-        <Container className=" my-6 rounded-t-md bg-white shadow-sm">
+        <Container className="my-6 rounded-t-md bg-white shadow-sm">
           <Img
             src={`https://dev.dyondzisanicommerce.co.za/email/email-banner.png`}
             width="100%"
@@ -51,7 +51,7 @@ export const DyondzisaniCommerceTemplate = ({
             className="bg-cover object-cover"
             alt="Dyondzisani Commerce Email banner Image"
           />
-          <Section className="px-6 text-[16px] leading-6 ">
+          <Section className="px-6 text-[16px] leading-6">
             <Section>
               <Heading as="h2" className="text-[#F26222]">
                 Parent / Guardian Details
@@ -76,7 +76,10 @@ export const DyondzisaniCommerceTemplate = ({
             <Hr className="border-[#EFAD2B]" />
             <Section>
               <Row>
-                <Text>info@dyondzisanicommerce.co.za | 065 723 6771</Text>
+                <Text>
+                  065 723 6771 | info@dyondzisanicommerce.co.za |
+                  www.dyondzisanicommerce.co.za
+                </Text>
               </Row>
             </Section>
           </Section>

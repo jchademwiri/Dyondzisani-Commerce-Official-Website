@@ -6,26 +6,37 @@ import { whatsapplink } from "@/data/constrains";
 
 const HomeHero = () => {
   return (
-    <section className="box-shadow bg-[url('/images/school-boy.webp')] bg-cover bg-center bg-no-repeat object-cover ">
+    <section className="box-shadow bg-[url('/images/school-boy.webp')] bg-cover bg-center bg-no-repeat object-cover">
       <div className="bg-background/80">
-        <div className="container flex min-h-[80vh] max-w-7xl  items-center gap-6  py-4 md:py-0">
+        <div className="container flex min-h-[80vh] max-w-7xl items-center gap-6 py-4 md:py-0">
           <div className="md:max-w-3xl">
-            <h1 className="text-3xl font-bold sm:text-5xl ">
-              Extra classes & Personalized tutoring for commerce subjects.
+            <h1 className="text-2xl font-bold sm:text-5xl">
+              Dyondzisani Commerce
+              <br />
+              <span className="text-xl font-normal sm:text-2xl">
+                BCom Experts, Yet Teachers at heart
+              </span>
             </h1>
-            <p className=" text-xl leading-7 [&:not(:first-child)]:my-6">
-              We&apos;re BCom experts, yet teacher&apos;s heart. Providing extra
-              classes & one-on-one sessions for Accounting, Economics & Business
-              Studies to high school learners{" "}
-              <em className="font-semibold text-primary">IEB and CAPS</em>.
+
+            <p className="text-xl leading-7 [&:not(:first-child)]:my-6">
+              Dyondzisani Commerce <b>(DC)</b> is an educational organization
+              that focuses on providing tutorial services and extra classes. We
+              specialize in teaching commercial subjects from Basic Education{" "}
+              <span className="font-semibold text-primary">IEB and CAPS</span>{" "}
+              to{" "}
+              <span className="font-semibold text-destructive">
+                Higher education
+              </span>{" "}
+              (All related of commerce modules).
             </p>
+
             {/* TODO: Update screen size  */}
-            <div className="xs:flex-row flex flex-col gap-4">
+            <div className="flex flex-col gap-4 xs:flex-row">
               <Link
                 href={whatsapplink}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:bg-destructive"
+                className=""
               >
                 <Button className="flex w-full gap-2">
                   <MessagesSquare />

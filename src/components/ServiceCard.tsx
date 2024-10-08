@@ -7,7 +7,6 @@ import {
   CardTitle,
 } from "./ui/card";
 import Link from "next/link";
-import { Button } from "./ui/button";
 
 type ServiceCardProps = {
   image: StaticImageData;
@@ -24,10 +23,9 @@ const ServiceCard = ({
   title,
   link,
   description,
-  color,
 }: ServiceCardProps) => {
   return (
-    <Card className="flex flex-col justify-between">
+    <Card className={`flex flex-col justify-between`}>
       <div>
         <Image
           src={image}
@@ -37,17 +35,12 @@ const ServiceCard = ({
           className="w-full rounded-t-lg bg-cover object-cover"
         />
         <CardHeader>
-          <CardTitle className="hover:text-primary">
+          <CardTitle>
             <Link href={link}>{title}</Link>
           </CardTitle>
         </CardHeader>
         <CardContent>{description}</CardContent>
       </div>
-      <CardFooter>
-        <Link href={link} className={`${color}`}>
-          Read More
-        </Link>
-      </CardFooter>
     </Card>
   );
 };
