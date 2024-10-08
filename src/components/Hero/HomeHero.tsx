@@ -11,11 +11,13 @@ const HomeHero = () => {
         <div className="container flex min-h-[80vh] max-w-7xl items-center gap-6 py-4 md:py-0">
           <div className="md:max-w-3xl">
             <h1 className="text-3xl font-bold sm:text-5xl">
-              Extra classes & Personalized tutoring for commerce subjects.
+              Dyondzisani Commerce
+              <br />
+              <span className="text-2xl">
+                BCom Experts, Yet Teachers at heart
+              </span>
             </h1>
-            {/* 
-              Dyondzisani Commerce (DC) is an educational organization that focuses on providing tutorial services and extra classes. We specialize in teaching commercial subjects from Basic Education <em className="font-semibold text-primary">IEB and CAPS</em> to <em className="font-semibold text-destructive">Higher education</em> (All related of commerce modules).
-              */}
+
             <p className="text-xl leading-7 [&:not(:first-child)]:my-6">
               Dyondzisani Commerce <b>(DC)</b> is an educational organization
               that focuses on providing tutorial services and extra classes. We

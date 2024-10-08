@@ -27,7 +27,7 @@ export const basicEducationService = [
   {
     color: "yellow-500",
     image: beEconomics,
-    title: "Economics Studies",
+    title: "Economics",
     alt: "economics studies lessons",
     link: beEconomicsLink,
     description:

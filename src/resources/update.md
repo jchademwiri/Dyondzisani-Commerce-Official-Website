@@ -1,12 +1,12 @@
 # Website Update Notes
 
-## 1. Home Hero Section
+## 1. Home Hero Section.
 
-Dyondzisani Commerce
-BCom Experts, Yet Teachers at heart
+<!-- Dyondzisani Commerce
+BCom Experts, Yet Teachers at heart -->
 
 ## Autiting
-Auditing typically refers to financial statement audits or an objective examination and evaluation of a company's financial statements – usually performed by an external third party. Audits can be performed by internal parties and a government entity.
+<!-- Auditing typically refers to financial statement audits or an objective examination and evaluation of a company's financial statements – usually performed by an external third party. Audits can be performed by internal parties and a government entity. -->
 
 ## 2. About
 

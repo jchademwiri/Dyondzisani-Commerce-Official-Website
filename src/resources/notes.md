@@ -36,3 +36,4 @@
       1. Link mel@dyondzisanicommerce to mel@dycommerce.co.za
 1. forward dyondzisanicommerce.co.za to dycommerce.co.za
 1. Update dycommerce.co.za to be the new main domain
+

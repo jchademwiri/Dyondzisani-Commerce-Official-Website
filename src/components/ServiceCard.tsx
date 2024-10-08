@@ -23,7 +23,6 @@ const ServiceCard = ({
   title,
   link,
   description,
-  color,
 }: ServiceCardProps) => {
   return (
     <Card className={`flex flex-col justify-between`}>
@@ -37,9 +36,7 @@ const ServiceCard = ({
         />
         <CardHeader>
           <CardTitle>
-            <Link href={link} className={`text-${color}`}>
-              {title}
-            </Link>
+            <Link href={link}>{title}</Link>
           </CardTitle>
         </CardHeader>
         <CardContent>{description}</CardContent>

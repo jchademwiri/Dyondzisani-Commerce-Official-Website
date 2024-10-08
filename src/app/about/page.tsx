@@ -49,7 +49,7 @@ const About = () => {
             <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
               Our Mission
             </h2>
-            <p className="leading-7 text-muted-foreground">
+            <p className="leading-7">
               Dyondzisani Commerce strives for academic excellence in commercial
               subjects for{" "}
               <span className="font-semibold text-primary">
@@ -60,12 +60,12 @@ const About = () => {
               sessions to learners who wish to obtain academic excellence.
             </p>
           </div>
-          <div className="">
+          {/* <div className="">
             <h3 className="scroll-m-20 pb-2 text-2xl font-semibold tracking-tight first:mt-0">
               What Our Parents & Learners Say:
             </h3>
             <TestimonialSlide />
-          </div>
+          </div> */}
         </section>
       </section>
       <CallToAction />
