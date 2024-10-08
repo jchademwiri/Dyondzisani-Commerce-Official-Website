@@ -10,7 +10,10 @@ const Services = () => {
           Our Services
         </h2>
         <p className="max-w-4xl text-lg leading-7 [&:not(:first-child)]:mt-6">
-        We provide one on contact session including online. Exam technique, in depth understanding of the topic, script review, tailored exam technique and support to ensure that our learners & students are achieve academic excellence.
+          We provide one on contact session including online. Exam technique, in
+          depth understanding of the topic, script review, tailored exam
+          technique and support to ensure that our learners & students achieve
+          academic excellence.
         </p>
       </header>
       <section className="grid place-items-center">
