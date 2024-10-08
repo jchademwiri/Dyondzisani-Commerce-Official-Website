@@ -8,7 +8,7 @@ const AboutHero = () => {
         <div className="container flex min-h-[80vh] max-w-7xl items-center gap-6 py-4 md:py-0">
           <div className="md:max-w-3xl">
             <h1 className="text-4xl font-bold sm:text-5xl">
-              Who is <em className="text-primary"> Dyondzisani Commerce</em>?
+              Who is Dyondzisani Commerce?
             </h1>
 
             <p className="text-xl leading-7 [&:not(:first-child)]:my-6">
@@ -29,7 +29,7 @@ const AboutHero = () => {
                 success!
               </Link>
             </p>
-            <div className="flex flex-col gap-4 xs:flex-row">
+            {/* <div className="flex flex-col gap-4 xs:flex-row">
               <Link href={"#whychooseus"}>
                 <Button className="flex w-full gap-2">Why Choose Us?</Button>
               </Link>
@@ -38,7 +38,7 @@ const AboutHero = () => {
                   Contact Us Now
                 </Button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

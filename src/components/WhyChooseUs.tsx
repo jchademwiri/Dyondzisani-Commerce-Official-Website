@@ -14,17 +14,18 @@ const WhyChooseUs = () => {
 
       <h2
         className={cn(
-          "relative z-20 px-8 text-xl font-semibold md:px-0  md:text-4xl",
+          "relative z-20 px-8 text-xl font-semibold md:px-0 md:text-4xl",
         )}
       >
         Why Choose Us?
       </h2>
-      <p className="container relative z-20 mt-2 max-w-4xl text-center leading-7  text-foreground/90 md:px-0">
+      <p className="container relative z-20 mt-2 max-w-4xl text-center leading-7 text-foreground/90 md:px-0">
         Commerce is what truly makes the world go round. Irrespective which
-        career or entrepreneurial path your child chooses to follow, their path
-        will land them in commerce. An early introduction of economics, business
-        and accounting gives your child a distinct tool to start exercising
-        daily commerce decisions at their level.
+        career or entrepreneurial path your a learner or student chooses to
+        follow, their path will land them in commerce. A basic and advanced
+        introduction of commerce related topics gives our learners and students
+        a distinct tool to start exercising daily commerce
+        decisions at their level.
       </p>
       <div className="relative z-20 my-6 flex gap-4 px-8 md:px-0">
         <Link href={whatsapplink}>
@@ -32,9 +33,9 @@ const WhyChooseUs = () => {
             <MessagesSquare /> Talk To Us
           </Button>
         </Link>
-        <Link href={"/about"}>
+        {/* <Link href={"/about"}>
           <Button className="flex gap-2">Learn More</Button>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

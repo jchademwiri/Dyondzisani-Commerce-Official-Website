@@ -5,6 +5,9 @@
 Dyondzisani Commerce
 BCom Experts, Yet Teachers at heart
 
+## Autiting
+Auditing typically refers to financial statement audits or an objective examination and evaluation of a company's financial statements – usually performed by an external third party. Audits can be performed by internal parties and a government entity.
+
 ## 2. About
 
 ### ✔️ About section update (Who is Dyondzisani Commerce)

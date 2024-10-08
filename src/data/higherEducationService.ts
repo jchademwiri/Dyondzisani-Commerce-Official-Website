@@ -36,7 +36,7 @@ export const higherEducationService = [
     alt: "auditing lessons",
     link: heAuditingLink,
     description:
-      "Auditors whether the statements under review present a fair and materially correct representation financial statements, resulting in an audit opinion. This will be incorporated with ethics and corporate governance.",
+      "Auditing typically refers to financial statement audits or an objective examination and evaluation of a company's financial statements – usually performed by an external third party. Audits can be performed by internal parties and a government entity.",
   },
 
   {
@@ -46,6 +46,6 @@ export const higherEducationService = [
     alt: "taxation lessons",
     link: heTaxationLink,
     description:
-      "South African Tax Act. A legislation that governs how individuals are taxed in South Africa. Students will be exposed to the following: VAT, income tax, estate duty, antiviolence, capital gains tax, case laws employees’ tax and many other tax related topics. ",
+      "South African Tax Act. A legislation that governs how individuals are taxed in South Africa. Students will be exposed to the following: VAT, income tax, estate duty, anti-avoidance provisions, capital gains tax, case laws employees’ tax and many other tax related topics. ",
   },
 ];

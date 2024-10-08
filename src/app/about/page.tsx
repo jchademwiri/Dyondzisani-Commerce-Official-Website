@@ -52,10 +52,10 @@ const About = () => {
             <p className="leading-7 text-muted-foreground">
               Dyondzisani Commerce strives for academic excellence in commercial
               subjects for{" "}
-              <em className="font-semibold text-primary">
+              <span className="font-semibold text-primary">
                 {" "}
                 basic education and commerce modules for Higher education
-              </em>
+              </span>
               . This will be achieved through providing classes and tutoring
               sessions to learners who wish to obtain academic excellence.
             </p>
