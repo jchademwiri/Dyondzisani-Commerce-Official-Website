@@ -13,7 +13,7 @@ const HomeHero = () => {
             <h1 className="text-2xl font-bold sm:text-5xl">
               Dyondzisani Commerce
               <br />
-              <span className="text-xl sm:text-2xl">
+              <span className="text-xl font-normal sm:text-2xl">
                 BCom Experts, Yet Teachers at heart
               </span>
             </h1>
@@ -22,7 +22,8 @@ const HomeHero = () => {
               Dyondzisani Commerce <b>(DC)</b> is an educational organization
               that focuses on providing tutorial services and extra classes. We
               specialize in teaching commercial subjects from Basic Education{" "}
-              <span className="font-semibold text-primary">IEB and CAPS</span> to{" "}
+              <span className="font-semibold text-primary">IEB and CAPS</span>{" "}
+              to{" "}
               <span className="font-semibold text-destructive">
                 Higher education
               </span>{" "}
