@@ -22,10 +22,10 @@ const HomeHero = () => {
               Dyondzisani Commerce <b>(DC)</b> is an educational organization
               that focuses on providing tutorial services and extra classes. We
               specialize in teaching commercial subjects from Basic Education{" "}
-              <em className="font-semibold text-primary">IEB and CAPS</em> to{" "}
-              <em className="font-semibold text-destructive">
+              <span className="font-semibold text-primary">IEB and CAPS</span> to{" "}
+              <span className="font-semibold text-destructive">
                 Higher education
-              </em>{" "}
+              </span>{" "}
               (All related of commerce modules).
             </p>
 
