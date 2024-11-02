@@ -1,6 +1,6 @@
 import CallToAction from "@/components/CallToAction";
 import { AboutHero } from "@/components/Hero";
-import { TestimonialSlide } from "@/components/TestimonialSlide";
+// import { TestimonialSlide } from "@/components/TestimonialSlide";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -37,11 +37,11 @@ const About = () => {
           </ul>
           <p className="leading-7 [&:not(:first-child)]:my-6">
             We firmly believe that commerce is what truly makes the world go
-            round. Irrespective which career or entrepreneurial path your child
-            chooses to follow, their path will land them in commerce. An early
-            introduction of economics, business and accounting gives your child
-            a distinct tool to start exercising daily commerce decisions at
-            their level.
+            round. Irrespective which career or entrepreneurial path an
+            individual chooses to follow, their path will land them in commerce.
+            An early introduction, in-depth understanding and an assistance of
+            commercial subjects and modules, provides a distinct tool to start
+            exercising daily commerce decisions.
           </p>
         </section>
         <section className="col-span-2 gap-3 md:grid md:grid-cols-2 lg:col-auto lg:grid-cols-1">
@@ -60,12 +60,6 @@ const About = () => {
               sessions to learners who wish to obtain academic excellence.
             </p>
           </div>
-          {/* <div className="">
-            <h3 className="scroll-m-20 pb-2 text-2xl font-semibold tracking-tight first:mt-0">
-              What Our Parents & Learners Say:
-            </h3>
-            <TestimonialSlide />
-          </div> */}
         </section>
       </section>
       <CallToAction />

@@ -1,7 +1,7 @@
-import Link from "next/link";
-import { Bolt, MessagesSquare } from "lucide-react";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 import { whatsapplink } from "@/data/constrains";
+import { Bolt, MessagesSquare } from "lucide-react";
+import Link from "next/link";
 // import { BackgroundBeams } from "../ui/background-beams";
 
 const HomeHero = () => {
@@ -21,13 +21,17 @@ const HomeHero = () => {
             <p className="text-xl leading-7 [&:not(:first-child)]:my-6">
               Dyondzisani Commerce <b>(DC)</b> is an educational organization
               that focuses on providing tutorial services and extra classes. We
-              specialize in teaching commercial subjects from Basic Education{" "}
-              <span className="font-semibold text-primary">IEB and CAPS</span>{" "}
-              to{" "}
-              <span className="font-semibold text-destructive">
-                Higher education
+              specialize in teaching commercial subjects from{" "}
+              <span className="font-semibold text-primary">
+                {" "}
+                Basic Education{" "}
               </span>{" "}
-              (All related of commerce modules).
+              (IEB and CAPS) to{" "}
+              <span className="font-semibold text-primary">
+                {" "}
+                Higher education{" "}
+              </span>{" "}
+              (All related of commerce modules).
             </p>
 
             {/* TODO: Update screen size  */}
