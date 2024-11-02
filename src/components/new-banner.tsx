@@ -1,17 +1,17 @@
-import { bannerImage, graduate } from "@/data/images";
-import Image from "next/image";
-import { Button } from "./ui/button";
-import Link from "next/link";
+import { bannerImage } from "@/data/images";
 import { Bolt, MessagesSquare } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 const NewBanner = () => {
   return (
     <section className="container grid min-h-[80vh] place-content-center gap-6 py-4 md:grid-cols-2 md:py-0">
       <div className="self-center">
-        <h1 className="text-4xl font-bold sm:text-5xl ">
+        <h1 className="text-4xl font-bold sm:text-5xl">
           Personalized Tutoring for Business & Economics Success
         </h1>
-        <p className=" text-xl leading-7 [&:not(:first-child)]:my-6">
+        <p className="text-xl leading-7 [&:not(:first-child)]:my-6">
           We&apos;re BCom experts, with a teacher&apos;s heart. Get one-on-one
           tutoring tailored to your child&apos;s needs and curriculum ({" "}
           <em className="font-semibold text-primary">IEB and CAPS</em> ).
@@ -35,7 +35,7 @@ const NewBanner = () => {
         <Image
           src={bannerImage}
           alt="hero section image"
-          className="flip h-full w-full rounded-md object-cover "
+          className="flip h-full w-full rounded-md object-cover"
         />
       </div>
     </section>

@@ -29,7 +29,7 @@ const basicEducationFormSchema = z.object({
     ["Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12"],
     {
       required_error: "You need to select a Learners Grade.",
-    },
+    }
   ),
   curriculum: z.enum(["IEB", "CAPS"], {
     required_error: "You need to select a Curriculum.",

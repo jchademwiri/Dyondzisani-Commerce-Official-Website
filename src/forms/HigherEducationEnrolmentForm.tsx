@@ -1,9 +1,12 @@
 "use client";
 
+import { higherEducationModules } from "@/data/formdata";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
 import { sendGAEvent } from "@next/third-parties/google";
+import { useForm } from "react-hook-form";
 import { Button } from "../components/ui/button";
+import { CardContent, CardTitle } from "../components/ui/card";
+import { Checkbox } from "../components/ui/checkbox";
 import {
   Form,
   FormControl,
@@ -14,20 +17,17 @@ import {
   FormMessage,
 } from "../components/ui/form";
 import { Input } from "../components/ui/input";
-import { CardContent, CardTitle } from "../components/ui/card";
-import { Textarea } from "../components/ui/textarea";
 import { RadioGroup, RadioGroupItem } from "../components/ui/radio-group";
-import { Checkbox } from "../components/ui/checkbox";
+import { Textarea } from "../components/ui/textarea";
 import { toast } from "../components/ui/use-toast";
-import { higherEducationModules } from "@/data/formdata";
 
-import Spinner from "../components/Spinner";
+import { SendHigherEducationEmail } from "@/app/actions";
 import {
   higherEducationFormSchema,
   THigherEducationFormSchema,
 } from "@/lib/validation";
 import { useState } from "react";
-import { SendHigherEducationEmail } from "@/app/actions";
+import Spinner from "../components/Spinner";
 
 const HigherEducationEnrolmentForm = () => {
   const form = useForm<THigherEducationFormSchema>({
@@ -153,7 +153,7 @@ const HigherEducationEnrolmentForm = () => {
                                   {year}
                                 </FormLabel>
                               </FormItem>
-                            ),
+                            )
                           )}
                         </RadioGroup>
                       </FormControl>
@@ -189,7 +189,7 @@ const HigherEducationEnrolmentForm = () => {
                                 <FormControl>
                                   <Checkbox
                                     checked={field.value?.includes(
-                                      module.label,
+                                      module.label
                                     )}
                                     onCheckedChange={(checked) => {
                                       return checked
@@ -199,8 +199,8 @@ const HigherEducationEnrolmentForm = () => {
                                           ])
                                         : field.onChange(
                                             field.value?.filter(
-                                              (value) => value !== module.label,
-                                            ),
+                                              (value) => value !== module.label
+                                            )
                                           );
                                     }}
                                   />

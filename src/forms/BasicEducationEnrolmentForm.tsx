@@ -214,7 +214,7 @@ const BasicEducationEnrolmentForm = () => {
                                 <FormControl>
                                   <Checkbox
                                     checked={field.value?.includes(
-                                      subject.label,
+                                      subject.label
                                     )}
                                     onCheckedChange={(checked) => {
                                       return checked
@@ -224,9 +224,8 @@ const BasicEducationEnrolmentForm = () => {
                                           ])
                                         : field.onChange(
                                             field.value?.filter(
-                                              (value) =>
-                                                value !== subject.label,
-                                            ),
+                                              (value) => value !== subject.label
+                                            )
                                           );
                                     }}
                                   />

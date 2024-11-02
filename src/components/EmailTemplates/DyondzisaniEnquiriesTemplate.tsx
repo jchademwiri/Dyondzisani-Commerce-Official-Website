@@ -1,6 +1,5 @@
 import {
   Body,
-  Column,
   Container,
   Head,
   Heading,
@@ -8,12 +7,11 @@ import {
   Html,
   Img,
   Preview,
-  Section,
-  Text,
   Row,
+  Section,
   Tailwind,
+  Text,
 } from "@react-email/components";
-import * as React from "react";
 
 interface DyondzisaniCommerceTemplateProps {
   firstName: string;

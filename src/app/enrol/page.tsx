@@ -9,7 +9,7 @@ export default function EnrolmentPage() {
     <div className="container max-w-7xl p-6">
       <section className="mx-auto grid max-w-4xl rounded-sm">
         <CardHeader className="grid place-items-center">
-          <CardTitle>StudentEnrolment Form</CardTitle>
+          <CardTitle>Student Enrolment Form</CardTitle>
           <CardDescription>
             Fill in the form below to enrol about our services.
           </CardDescription>

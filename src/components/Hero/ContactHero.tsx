@@ -1,5 +1,8 @@
+import { whatsapplink } from "@/data/constrains";
+import { Mail } from "lucide-react";
 import Link from "next/link";
-import { Bolt, Mail, Map, MessagesSquare, Phone } from "lucide-react";
+import { BsWhatsapp } from "react-icons/bs";
+import ContactDetailsCard from "../ContactDetailsCard";
 import { Button } from "../ui/button";
 import {
   Card,
@@ -8,15 +11,6 @@ import {
   CardHeader,
   CardTitle,
 } from "../ui/card";
-import ContactDetailsCard from "../ContactDetailsCard";
-import {
-  email,
-  emailLink,
-  phoneLink,
-  phoneNumber,
-  whatsapplink,
-} from "@/data/constrains";
-import { BsWhatsapp } from "react-icons/bs";
 
 const info = "info@dyondzisanicommerce.co.za";
 const help = "help@dyondzisanicommerce.co.za";
