@@ -1,15 +1,8 @@
 import ContactHero from "@/components/Hero/ContactHero";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import Map from "@/components/Map";
+import { Card, CardContent } from "@/components/ui/card";
 import { centurion, fourWays } from "@/data/maps";
 import { Metadata } from "next";
-import { ContactForm } from "@/forms";
 
 export const metadata: Metadata = {
   title: "Contact",

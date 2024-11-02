@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "./ui/button";
-import Link from "next/link";
 import { Bolt, MessagesSquare } from "lucide-react";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 const HomeHero = () => {
   return (
@@ -17,6 +17,7 @@ const HomeHero = () => {
             Bcom Experts <br /> Yet Teachers at heart.
           </p>
           <motion.div
+            // className="flex gap-4"
             initial={{ opacity: 0.0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -24,7 +25,6 @@ const HomeHero = () => {
               duration: 0.8,
               ease: "easeInOut",
             }}
-            className="flex gap-4"
           >
             <Link href={"/"} className="hover:bg-destructive">
               <Button className="flex gap-2">
@@ -41,7 +41,6 @@ const HomeHero = () => {
           </motion.div>
         </div>
       </div>
-      {/* <BackgroundBeams /> */}
     </div>
   );
 };

@@ -1,11 +1,5 @@
-import {
-  email,
-  emailLink,
-  phoneLink,
-  phoneNumber,
-  whatsapplink,
-} from "@/data/constrains";
-import { Mail, Map, Phone } from "lucide-react";
+import { phoneLink, phoneNumber, whatsapplink } from "@/data/constrains";
+import { Map, Phone } from "lucide-react";
 import Link from "next/link";
 import { BsWhatsapp } from "react-icons/bs";
 

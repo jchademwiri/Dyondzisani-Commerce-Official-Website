@@ -1,12 +1,7 @@
 "use server";
 
 import ContactEmail from "@/emails/ContactEmail";
-import HigherEducationEnrolmentEmail from "@/emails/HigherEducationEnrolmentEmail";
-import {
-  TContactFormSchema,
-  // Remove the following line:
-  // THigherEducationFormSchema,
-} from "@/lib/validation";
+import { TContactFormSchema } from "@/lib/validation";
 import { Resend } from "resend";
 
 export const SendContactEmail = async ({
@@ -18,12 +13,12 @@ export const SendContactEmail = async ({
   message,
 }: TContactFormSchema) => {
   try {
-    const resend: any = new Resend(process.env.RESEND_API_KEY);
+    const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
       from: `Dyodzisani Commerce Website <enquiries@dyondzisanicommerce.co.za>`,
       to: `info@dyondzisanicommerce.co.za`,
       cc: `${email}`,
-      reply_to: `info@dyondzisanicommerce.co.za`,
+      replyTo: `info@dyondzisanicommerce.co.za`,
       subject: `Contact Form Submission`,
       react: ContactEmail({
         firstName,

@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "email": "email dev --port 3002"
+    "email": "email dev --port 3002",
+    "format": "prettier src/ emails/ --write ."
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -27,6 +28,7 @@
     "clsx": "^2.1.1",
     "embla-carousel-autoplay": "^8.3.1",
     "embla-carousel-react": "^8.3.1",
+    "eslint-plugin-check-file": "^2.8.0",
     "framer-motion": "^11.11.11",
     "lucide-react": "^0.454.0",
     "next": "15.0.2",
@@ -44,6 +46,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/node": "^22.8.6",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",

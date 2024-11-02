@@ -1,15 +1,15 @@
+import { graduate } from "@/data/images";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { CardDescription } from "./ui/card";
-import { graduate, whatsappIcon } from "@/data/images";
-import Image from "next/image";
 
 const Banner = () => {
   return (
-    <section id="home" className=" container py-24 md:py-4">
-      <div className="grid place-items-center gap-4 md:grid-cols-2 lg:grid-cols-3 ">
+    <section id="home" className="container py-24 md:py-4">
+      <div className="grid place-items-center gap-4 md:grid-cols-2 lg:grid-cols-3">
         <div className="lg:col-span-2">
-          <h1 className="text-4xl font-bold sm:text-5xl ">
+          <h1 className="text-4xl font-bold sm:text-5xl">
             IT & Computer Science Academic Support in South Africa.
           </h1>
           <CardDescription className="py-4 text-lg sm:text-xl">
@@ -21,7 +21,7 @@ const Banner = () => {
           </CardDescription>
           <div className="flex gap-2">
             <Button>
-              <Link href={"/"} className=" flex items-center gap-2">
+              <Link href={"/"} className="flex items-center gap-2">
                 Let&apos;s Chat Now
                 <svg
                   width="41"
@@ -73,13 +73,13 @@ export default Banner;
 //     <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
 //       Who is Dyondzisani Commerce?
 //     </h1>
-    // <p className="max-w-[600px] text-xl leading-7 [&:not(:first-child)]:my-6">
-    //   Dyondzisani is a Xitsonga word that addresses a group of people to
-    //   teach. The company was founded by Teleni Mellisah Chauke, an
-    //   accountant, in 2022 while providing extra accounting lessons to
-    //   learner from Grade 8-12. The company grew in providing all commerce
-    //   subjects Accounting, Business Studies and Economics for{" "}
-    //   <em className="font-semibold text-primary">IEB and CAPS</em> .
-    // </p>
+// <p className="max-w-[600px] text-xl leading-7 [&:not(:first-child)]:my-6">
+//   Dyondzisani is a Xitsonga word that addresses a group of people to
+//   teach. The company was founded by Teleni Mellisah Chauke, an
+//   accountant, in 2022 while providing extra accounting lessons to
+//   learner from Grade 8-12. The company grew in providing all commerce
+//   subjects Accounting, Business Studies and Economics for{" "}
+//   <em className="font-semibold text-primary">IEB and CAPS</em> .
+// </p>
 //   </div>
 // </section>

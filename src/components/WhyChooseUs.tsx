@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
 
       <h2
         className={cn(
-          "relative z-20 px-8 text-xl font-semibold md:px-0 md:text-4xl",
+          "relative z-20 px-8 text-xl font-semibold md:px-0 md:text-4xl"
         )}
       >
         Why Choose Us?

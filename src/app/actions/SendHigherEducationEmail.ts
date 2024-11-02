@@ -14,12 +14,12 @@ export const SendHigherEducationEmail = async ({
   medicalCondition,
 }: THigherEducationFormSchema) => {
   try {
-    const resend: any = new Resend(process.env.RESEND_API_KEY);
+    const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
       from: `Dyodzisani Commerce Website <enquiries@dyondzisanicommerce.co.za>`,
       to: `info@dyondzisanicommerce.co.za`,
       cc: `${email}`,
-      reply_to: `info@dyondzisanicommerce.co.za`,
+      replyTo: `info@dyondzisanicommerce.co.za`,
       subject: `New Higher Education Student Enrolment`,
       react: HigherEducationEnrolmentEmail({
         firstName,
