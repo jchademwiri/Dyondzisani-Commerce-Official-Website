@@ -1,30 +1,136 @@
 # Dyondzisani Commerce Official Website
 
-This is the official repository for the Dyondzisani Commerce website. It is a Next.js application designed to provide information about tutoring services and facilitate student enrolment for both Basic and Higher Education.
+This repository contains the official website for **Dyondzisani Commerce**. The application is built with Next.js and provides information about tutoring services while enabling student enrolment for both Basic and Higher Education programmes.
+
+---
 
 ## Features
 
-- **Responsive Design**: Built with Tailwind CSS for a mobile-first approach.
-- **Student Enrolment**: Dedicated forms for Basic and Higher Education student registration.
-- **Contact Services**: General enquiry form for potential clients.
-- **Email Integration**: Automated email notifications for enrolments and messages using Resend and React Email.
-- **Analytics**: Integrated with Google Analytics and Vercel Analytics for tracking site performance and user engagement.
-- **SEO Optimized**: Includes metadata, OpenGraph tags, and sitemap generation.
+* **Responsive Design** – Mobile‑first UI built with Tailwind CSS.
+* **Student Enrolment** – Dedicated enrolment forms for Basic and Higher Education.
+* **Contact Services** – General contact form for enquiries.
+* **Email Integration** – Automated email notifications using Resend and React Email.
+* **Analytics** – Google Analytics and Vercel Analytics integration for performance and usage tracking.
+* **SEO Optimised** – Metadata, Open Graph tags, and sitemap support.
+
+---
 
 ## Tech Stack
 
-- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
-- **Language**: TypeScript
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **UI Components**: [Radix UI](https://www.radix-ui.com/) & [Lucide React](https://lucide.dev/)
-- **Form Handling**: [React Hook Form](https://react-hook-form.com/) & [Zod](https://zod.dev/) (Validation)
-- **Email**: [Resend](https://resend.com/) & [React Email](https://react.email/)
-- **Package Manager**: pnpm
+* **Framework:** Next.js 15 (App Router)
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+* **UI Components:** Radix UI, Lucide React
+* **Forms & Validation:** React Hook Form, Zod
+* **Email:** Resend, React Email
+* **Package Manager:** pnpm
+
+---
+
+## Environment Variables
+
+This project uses environment variables for secure configuration. Create a `.env.local` file in the root of the project with the following variable:
+
+| Variable                                         | Description                                                  | Used In                                         |
+| ------------------------------------------------ | ------------------------------------------------------------ | ----------------------------------------------- |
+| `RESEND_API_KEY`                                 | API key from Resend for sending enrolment and contact emails | `src/app/actions/SendBasicEducationEmail.ts`  \ |
+| `src/app/actions/SendHigherEducationEmail.ts`  \ |                                                              |                                                 |
+| `src/app/actions/SendContactEmail.ts`            |                                                              |                                                 |
+
+### Optional
+
+The Google Analytics ID is currently hard‑coded in `src/app/layout.tsx`.
+
+If you prefer to manage it via environment variables in future, you can replace it with:
+
+```
+process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID
+```
+
+and add the following to your `.env.local` file:
+
+```
+NEXT_PUBLIC_GOOGLE_ANALYTICS_ID=G-XXXXXXXXXX
+```
+
+---
 
 ## Getting Started
 
-Follow these steps to set up the project locally.
+Follow the steps below to set up the project locally.
 
 ### Prerequisites
 
-Ensure you have Node.js installed. This project uses `pnpm` as the package manager.
+* Node.js (LTS recommended)
+* pnpm (preferred package manager)
+
+### Installation
+
+1. **Clone the repository**
+
+```
+git clone https://github.com/your-username/dyondzisani-commerce-website.git
+cd dyondzisani-commerce-website
+```
+
+2. **Install dependencies**
+
+```
+pnpm install
+```
+
+3. **Configure environment variables**
+
+Create a `.env.local` file in the project root:
+
+```
+RESEND_API_KEY=re_123456789
+```
+
+4. **Run the development server**
+
+```
+pnpm dev
+```
+
+Open `http://localhost:3000` in your browser to view the application.
+
+---
+
+## Scripts
+
+| Command       | Description                                        |
+| ------------- | -------------------------------------------------- |
+| `pnpm dev`    | Start the development server                       |
+| `pnpm build`  | Build the application for production               |
+| `pnpm start`  | Start the production server                        |
+| `pnpm lint`   | Run ESLint checks                                  |
+| `pnpm format` | Format code in `src/` and `emails/` using Prettier |
+| `pnpm email`  | Start the React Email dev server on port 3002      |
+
+---
+
+## Project Structure
+
+```
+/src/app        → App Router pages and layouts
+/src/components → Reusable UI components
+/src/actions    → Server Actions for form handling and emails
+/src/emails     → React Email templates
+/src/lib        → Utilities and validation schemas
+/public         → Static assets
+```
+
+---
+
+## Deployment
+
+The recommended deployment platform for this project is **Vercel**, which provides first‑class support for Next.js.
+
+Refer to the official Next.js deployment documentation for additional configuration options.
+
+---
+
+## License
+
+This project is proprietary and maintained by Dyondzisani Commerce.
