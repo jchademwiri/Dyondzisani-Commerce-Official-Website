@@ -13,10 +13,10 @@ const AboutHero = () => {
             <p className="text-xl leading-7 [&:not(:first-child)]:my-6">
               Dyondzisani means Teach in Xitsonga. We have been transforming
               learning in{" "}
-              <em className="font-semibold text-destructive">
+              <span className="font-semibold text-destructive">
                 {" "}
                 Basic & Higher education to learners and students{" "}
-              </em>
+              </span>
               . Our educational service is commerce centered. With personalized
               and practical learning at our core, we empower learners and
               students to understand and excel.{" "}

@@ -31,7 +31,7 @@ const HomeHero = () => {
                 {" "}
                 Higher education{" "}
               </span>{" "}
-              (All related of commerce modules).
+              (All commerce related modules).
             </p>
 
             {/* TODO: Update screen size  */}
